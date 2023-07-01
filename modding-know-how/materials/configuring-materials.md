@@ -28,9 +28,9 @@ To set it up, use these keys for the "values" array of your material:
 
 The most commonly used material for anything textured is `engine\materials\metal_base.remt`. Despite its name, this material isn't necessarily metallic.
 
-<!-- {% hint style="info" %}
+
 You can also use this material as **emissive**, for a documentation, see [below](configuring-materials.md#emissive-material).&#x20;
-{% endhint %} -->
+
 
 To make your mesh load a texture, use the following `CKeyValuePair`s in your material's "values" array:
 
@@ -43,11 +43,11 @@ To make your mesh load a texture, use the following `CKeyValuePair`s in your mat
 
 <figure><img src="../../.gitbook/assets/textured material example.png" alt=""><figcaption><p>example use of metal_base.remt as a textured material</p></figcaption></figure>
 
-<!-- {% hint style="info" %}
-The .xbm is a container around the texture. Export the xbm to png via WolvenKit.
-{% endhint %} -->
 
-<!-- {% hint style="warning" %}
+The .xbm is a container around the texture. Export the xbm to png via WolvenKit.
+
+
+
 If your texture has any brightness issues in-game, toggle around the isGamma flag during import.
 
 The expected `isGamma` settings are:
@@ -55,7 +55,7 @@ The expected `isGamma` settings are:
 normals: **false**\
 diffuse/albedo: **true**\
 anything that is used in .inkatlas files: **true**
-{% endhint %} -->
+
 
 ### Further properties
 
@@ -89,9 +89,9 @@ Find a ready-to-use glowing .mi file [here](https://mega.nz/file/jZdCzRzT#7IJD9d
 
 Cyberpunk's glass material, such as `base\materials\glass_onesided.mt`
 
-<!-- {% hint style="info" %}
+
 All glass materials can consider the vertex color attribute, which you can edit [directly in Blender](https://all3dp.com/2/blender-vertex-paint-simply-explained/).&#x20;
-{% endhint %} -->
+
 
 <table><thead><tr><th width="291"></th><th></th></tr></thead><tbody><tr><td>Opacity</td><td>float, <code>0.0 - 1.0</code>: Controls glass transparency. </td></tr><tr><td>GlassTint</td><td>A texture to tint your glass. (TBD: Does it work as a mask?)</td></tr><tr><td>TintColor</td><td>Glass tint as RGB (copy from e.g. <code>mi_neokitsch_fridge_z_emissive.mi</code>). </td></tr><tr><td>IOR</td><td><a href="https://pixelandpoly.com/ior.html">Index of refraction</a> as float, <code>1.0-2.0:</code> The refraction properties of your material.</td></tr><tr><td>Refraction Depth</td><td>float <code>0.0-10.0:</code> Control refraction amount here.</td></tr><tr><td>FresnelBias</td><td>float, <code>0.0 - 2.0</code>: How much does the glass behave like a lens (that is, warp the picture behind it)?</td></tr><tr><td>BlurRadius</td><td>float, <code>0.0 - 1.0</code>: Blur amount when looking through the glass</td></tr><tr><td>VertexColorTint</td><td>float, <code>0.0 - 1.0</code>: Transparency of vertex colour tint</td></tr></tbody></table>
 

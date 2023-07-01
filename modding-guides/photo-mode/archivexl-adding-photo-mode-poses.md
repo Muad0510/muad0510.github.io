@@ -21,13 +21,13 @@ This guide will walk you through **adding poses** to Cyberpunk 2077's photo mode
 * [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198) 1.4.5 (the first version supporting this feature)
 * [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380) 1.12.0
 
-<!-- {% hint style="success" %}
-This guide assumes that you already have an .anims file with poses or animations. If you want to make your own, check [here](../animations/).
-{% endhint %} -->
 
-<!-- {% hint style="info" %}
+This guide assumes that you already have an .anims file with poses or animations. If you want to make your own, check [here](../animations/).
+
+
+
 You do not need any pose mode extender like PMU or MPAF anymore, although the ArchiveXL feature is compatible wiith all of them.
-{% endhint %} -->
+
 
 ## Getting the files
 
@@ -40,9 +40,9 @@ Download either of these files:&#x20;
 
 ### Step 1: Rename the folders
 
-<!-- {% hint style="info" %}
+
 This step is optional, but if you want to release your mod, you **have** to complete it (or cause mod conflicts for your users. Don't cause mod conflicts for your users.)
-{% endhint %} -->
+
 
 We usually do this at the very end and I'm leaving you alone with it. However, this time we start by renaming the folders.
 
@@ -79,9 +79,9 @@ Here's what those things do:
 
 ### localization.json
 
-<!-- {% hint style="info" %}
+
 You can name this file whatever you want, just make sure that you change the path and name in the .xl file.
-{% endhint %} -->
+
 
 * Change the yellow box `UI-Photomode-tutorial-netrunner-making-poses` to something unique to your mod.&#x20;
 * The green text is the name that will show up in photo mode — the female variant is the default.
@@ -96,9 +96,9 @@ You should know these files — after all, you made them. But just as a reminder
 
 You will need the green text in your [.yaml file](archivexl-adding-photo-mode-poses.md#the-.yaml-file).&#x20;
 
-<!-- {% hint style="info" %}
+
 Optional: If you want your pose to move, you can set the duration in the .yaml as well!
-{% endhint %} -->
+
 
 ### The .yaml file
 
@@ -108,9 +108,9 @@ This file will go into `r6/tweaks/yourfolder` and appends the poses that you def
 
 The first block will introduce your new category to the photo mode.&#x20;
 
-<!-- {% hint style="info" %}
+
 I recommend doing search and replace on `netrunner_making_poses`, because it's used a bunch of times.
-{% endhint %} -->
+
 
 * `PhotoModePoseCategories.netrunner_making_poses`: This is the name of the category, used to assign individual pose entries to your category.
 * `displayName:` This must match the `secondaryKey` in your .json
@@ -119,17 +119,17 @@ I recommend doing search and replace on `netrunner_making_poses`, because it's u
 
 #### Define the pose entries
 
-<!-- {% hint style="danger" %}
+
 If one of your poses is called `idle_stand`, that will break a bunch of other mods. Please re-name it in both the .anims file and the .yaml before releasing.
-{% endhint %} -->
+
 
 Now comes a long list of entries. They'll look like this:
 
 <figure><img src="../../.gitbook/assets/archivexl_photomode_yaml_2.png" alt=""><figcaption></figcaption></figure>
 
-<!-- {% hint style="success" %}
+
 You need to add one of those for every pose from your .anim file that you want to show up in photo mode.
-{% endhint %} -->
+
 
 `PhotoModePoses.sit_chair_table_keyboard__2h_on_keyboard__make_amm_addon`: This is the unique key to assign your pose to your pose set. You'll need it in the third block. \
 `animationName`: This must match the animation name in your [.anim file](archivexl-adding-photo-mode-poses.md#the-.anim-file-s) (the green box).\
@@ -154,9 +154,9 @@ The entries in the list must match the unique keys that you've defined in the se
 
 ## The result
 
-<!-- {% hint style="info" %}
+
 You can install and launch the Wolvenkit project as you downloaded it — just remember to delete the files afterwards!
-{% endhint %} -->
+
 
 <figure><img src="https://i.imgur.com/1nMpUSy.png" alt=""><figcaption><p>She has no idea what she's doing</p></figcaption></figure>
 

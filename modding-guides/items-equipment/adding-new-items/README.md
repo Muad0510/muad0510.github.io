@@ -22,46 +22,46 @@ This guide will walk you through **adding your own items** to Cyberpunk 2077, wh
 **Assumed skill level:** \
 You should be able to find your way around WolvenKit, but I aim to keep this as noob-friendly as possible.
 
-<!-- {% hint style="danger" %}
+
 **For experienced modders**
 
 I have repeatedly observed that newbies are fine with this guide, while people who know how to mod are not. Watch out for **boxes like this one** to avoid those pitfalls.
-{% endhint %} -->
+
 
 _The guide was created after reading_ [_this one_](https://drive.google.com/file/d/1aQjb8MpimB9LDNl7y1iTXH13MUvMrKsH/view) _and being left with a bunch of question marks. To get a deeper understanding, refer to the initial guide and follow the linked resources or consult ArchiveXL's_ [_documentation_](https://github.com/psiberx/cp2077-archive-xl)_._
 
-<!-- {% hint style="info" %}
+
 You can find a tool to troubleshoot your ArchiveXL mod [here](https://github.com/solaarTW/DeepAssetDiscovery/releases).
-{% endhint %} -->
+
 
 ## Grab the example files
 
 * Create a new Wolvenkit project
 * Download the prepared files from [manavortex's mega](https://mega.nz/file/TYMQUa7b#60y1HLM-BYvS5Eb1uccpq1hq48UwY6VLN5FLHpO8HtI) or [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8268) and extract them to the root of your new project (overwriting the "source" folder
 
-<!-- {% hint style="info" %}
+
 **If you would rather start from scratch:** Check the detailed instructions [here](adding-new-items-files-from-scratch.md).
 
 For an explanation of the file structure, see the [item structure explained](archive-xl-item-structure-explained.md) subpage.
 
 Understanding is **not required** as long as you follow the guide to the letter.
-{% endhint %} -->
 
-<!-- {% hint style="danger" %}
+
+
 ⚠ Do not edit those files outside of WolvenKit, and whatever you do, do not let Microsoft Excel touch the clothing.csv! ⚠
-{% endhint %} -->
+
 
 ### You should now have the following files:
 
 ![](../../../.gitbook/assets/archive\_xl\_adding\_items\_file\_structure.png)
 
-<!-- {% hint style="success" %}
+
 The example files are set up to load a shirt with two different appearances, which you can spawn directly:&#x20;
 
 `Game.AddToInventory("Items.my_custom_shirt_redwhite")`
 
 `Game.AddToInventory("Items.my_custom_shirt_redblack")`
-{% endhint %} -->
+
 
 ### Start the game
 
@@ -91,15 +91,15 @@ This is how everything connects. Looks pretty scary, but you can find a step by 
 
 ## Adding an appearance (example: blackblue)
 
-<!-- {% hint style="warning" %}
+
 Before you add an appearance, make sure that your item is loading up correctly and looking as expected. If you have to debug, you will have to look through every appearance you made!
 
 **For experienced modders**: This includes you! :)
-{% endhint %} -->
 
-<!-- {% hint style="info" %}
+
+
 If you would rather have a step-by-step guide for a gendered variant, see [the next section](./#adding-a-male-instance).
-{% endhint %} -->
+
 
 To add an appearance, you will have to touch the following files:
 
@@ -112,9 +112,9 @@ To add an appearance, you will have to touch the following files:
    3. Adding a material
    4. Connecting those things
 
-<!-- {% hint style="info" %}
+
 For a diagram of how everything connects, go [here](archive-xl-item-structure-explained.md#the-final-result).
-{% endhint %} -->
+
 
 ### Step 1: Register it in your \*.yaml
 
@@ -180,9 +180,9 @@ new:
 	name: appearance_root_entity_black_blue
 ```
 
-<!-- {% hint style="info" %}
+
 You do not need to change the `appearanceResource`.
-{% endhint %} -->
+
 
 ### Step 3: Add it to my\_custom\_shirt.app
 
@@ -201,9 +201,9 @@ componentName: t1_tutorial_custom_shirt_4711   << no need to change this
 mesh_appearance: mesh_black_blue                << corresponds to meshMeshAppearance.name in my_mesh.mesh  
 ```
 
-<!-- {% hint style="info" %}
+
 You can leave `partsValues` alone - this just points at the file that loads the mesh, and you've already set it up above when setting up the file.
-{% endhint %} -->
+
 
 ### Step 4: Add it to the .mesh
 
@@ -246,13 +246,13 @@ Game.AddToInventory('Items.my_custom_shirt_blueblack')
 
 ## Adding a Male Instance
 
-<!-- {% hint style="danger" %}
-This part of the tutorial isn't fully up-to-date with the overhauled file structure yet, so keep that in mind when studying the screenshots.
-{% endhint %} -->
 
-<!-- {% hint style="success" %}
+This part of the tutorial isn't fully up-to-date with the overhauled file structure yet, so keep that in mind when studying the screenshots.
+
+
+
 Also, this part is super easy to follow and even if you make a mistake, fixing it won't be a problem. But hey, you've put in a lot of work and made great progress, so why not take a sec and back up your project files? Better safe than sorry, right?&#x20;
-{% endhint %} -->
+
 
 Before we proceed with the tutorial, it's important to address a common issue you might have encountered while creating your mod.
 
@@ -266,7 +266,7 @@ To fix this issue, we'll need a mesh that's compatible with Male V.&#x20;
 
 In the interest of keeping things simple, we've found just the mesh for you! It's called `t1_024_ma_tshirt__sweater.mesh` and it can be found in the `base\characters\garment\citizen_casual\torso\t1_024_tshirt__sweater` directory.
 
-<!-- {% hint style="warning" %}
+
 If you plan on using other meshes for your mod, ensure that it has `ma` or `pma` in its name.&#x20;
 
 Keep in mind that some `ma` meshes may still have clipping issues when paired with certain types of clothing, while `pma` meshes are specifically designed for V and don't have this problem.&#x20;
@@ -274,17 +274,17 @@ Keep in mind that some `ma` meshes may still have clipping issues when paired wi
 If you decide to create your own mesh, be sure to fix any potential issues before using it in your mod. Check out our [<mark style="color:yellow;">3D modeling guide</mark>](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-know-how/3d-modelling) for helpful tips and resources.&#x20;
 
 Remember, a little extra effort in the beginning can save you a lot of headaches down the line!
-{% endhint %} -->
+
 
 Now, add the file to your project, move it to the `tutorial\torso\my_custom_shirt\` folder and rename it from `t1_024_ma_tshirt__sweater.mesh` to `my_mesh_m.mesh`.&#x20;
 
 Next, follow the steps you used for the original `my_mesh.mesh` by removing any unnecessary entries and adjusting the indices.
 
-<!-- {% hint style="danger" %}
+
 To avoid any issues, it's crucial to pay close attention to this step and double-check that the correct materials are present in the `localMaterialBuffer` and `materialEntries`, and that the indices are adjusted correctly.&#x20;
 
 This will ensure that your mod works as intended without any glitches or errors. If you need a refresher, [<mark style="color:yellow;">click here</mark>](./#optional-but-very-recommended-clean-out-obsolete-entries) to return to that section.
-{% endhint %} -->
+
 
 ### Creating a .ent File for Your Custom Mesh
 
@@ -324,9 +324,9 @@ Items.my_custom_shirt_redwhite:
     atlasPartName: slot_01
 ```
 
-<!-- {% hint style="info" %}
+
 If you are unclear about why this step was taken, we recommend [reading up on suffixes](../../../modding-know-how/files-and-what-they-do/entity-.ent-files/.ent-files-suffixes.md)!
-{% endhint %} -->
+
 
 ### Edit the rootentity.ent
 
@@ -365,15 +365,15 @@ Test your mod independently for both cases by loading the appropriate save file 
 Game.AddToInventory("Items.my_custom_shirt_redwhite")
 ```
 
-<!-- {% hint style="danger" %}
+
 Consider reviewing the guide to ensure that all steps have been followed correctly and that the values have been set appropriately. Ensure that the mesh is compatible with the male variant of V. If errors persist, review the [<mark style="color:yellow;">troubleshooting section</mark>](./#troubleshooting) for further assistance.
-{% endhint %} -->
+
 
 ## Troubleshooting
 
-<!-- {% hint style="info" %}
+
 There is a tool designed to help you with the process of finding missing dependencies. You can find it [here](https://github.com/solaarTW/DeepAssetDiscovery/releases).
-{% endhint %} -->
+
 
 First of all, check the logs for errors including the name of your mod:&#x20;
 
@@ -388,17 +388,17 @@ Second of all, make sure that you do not have capital letters in any of your pat
 
 Most likely, you have ignored the [hint box](./#get-the-files-create-the-structure) when picking your `mesh_entity.ent:` Make sure that you're using an entity file that corresponds with the slot that you are trying to replace (e.g. if your item is a pair of shoes, you need an entity file from `base\characters\garment\player_equipment\feet`).
 
-<!-- {% hint style="info" %}
+
 **If you are here because of a link from a different guide:**&#x20;
 
 You can find out which entity file your item uses by right-clicking on your mesh and selecting "find files using this". Add the .ent file to the list and open it in WolvenKit. Then, [replace the contents](../../npcs/appearances-change-the-looks.md#safely-adding-components) of the "components" array with those of an .ent file from the correct folder — don't forget to change the path to your mesh again!
-{% endhint %} -->
+
 
 ### I spawn my item, but nothing happens!
 
-<!-- {% hint style="warning" %}
+
 Before you start digging into your file structure, check if there are any leftover yml files from earlier versions/deploys in your tweaks directory. Do a full text search in e.g. Notepad++ in any files in the folder with the name of the item you want to spawn.
-{% endhint %} -->
+
 
 If no additional yml files are messing things up, then the error is somewhere in the first part of the chain and relatively easy to fix:
 
@@ -443,9 +443,9 @@ Congratulations, you've made it into the right half of the diagram! The error wi
 
 <figure><img src="https://camo.githubusercontent.com/621b7d370bdaaec42cf16a5a321512eaf0eaeb0decbe6ccc23865023802f98e7/68747470733a2f2f692e696d6775722e636f6d2f666c34306f465a2e706e67" alt=""><figcaption></figcaption></figure>
 
-<!-- {% hint style="info" %}
+
 If you set your `mesh_entity.ent` to point at a vanilla mesh, you can rule out your custom mesh and .mlsetup as a source of errors. Original game meshes will always have a working default appearance and will thus always be displayed!
-{% endhint %} -->
+
 
 ### The game crashes!
 
@@ -522,9 +522,9 @@ That's due to [garment support](../../../modding-know-how/3d-modelling/garment-s
 Time to restore your files one by one to the last working backup and restart from there.\
 Don't delete them, keep them in a different folder - you will be able to copy a lot of stuff over.
 
-<!-- {% hint style="info" %}
+
 By right-clicking on a tab title, you can move it to a new document group for easier copying.
-{% endhint %} -->
+
 
 \
 Good luck, soldier.

@@ -14,17 +14,17 @@ A selection of lists for looking up item codes. Alternatively, you can browse th
 | [Google Sheet](https://docs.google.com/spreadsheets/d/1UeEA0ONMtF6CNl1Cutkb4DNJ\_JiabhstfwiaA94m0ds/edit)                                       | Google Sheets (August 2022), supports filtering |
 |                                                                                                                                                 |                                                 |
 
-<!-- {% hint style="danger" %}
+
 Player equipment only: \
 \
 Not all items that you find in the player folder are actually hooked up to spawn. If you can't [find an app file](spawn-codes-baseids-hashes.md#the-.app), you ran into one of those. &#x20;
-{% endhint %} -->
+
 
 ## From a BaseID to an item's materials
 
-<!-- {% hint style="info" %}
+
 As an example, this will use `Reinforced Puffer Vest (Items.Vest_17_basic_01)`
-{% endhint %} -->
+
 
 ### The base ID
 
@@ -46,9 +46,9 @@ Head to WolvenKit and search for the first part of the BaseID:
 
 You will find at least one **entity file** and an **appearance file**.&#x20;
 
-<!-- {% hint style="warning" %}
+
 If you find multiple files, you need to open the correct one. You can identify those by the folder path: for player meshes, the name of the last folder will contain either `_pwa_` or `_pma_`, and the path will include either that or `player`.
-{% endhint %} -->
+
 
 ### The .app
 
@@ -69,9 +69,9 @@ We can see that the `basic_01` appearance is using the `default` material, and t
 
 
 
-<!-- {% hint style="info" %}
+
 To find your way through the mesh, check the guide for [recoloring items](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#step-2-finding-the-correct-appearance)!
-{% endhint %} -->
+
 
 {% content-ref url="../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md" %}
 [changing-materials-colors-and-textures.md](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md)

@@ -23,11 +23,11 @@ You get an error message like this:
 
 The neutral bone is created by the glb export plugin when there are vertex groups without a parent bone. WolvenKit will not let you import if there is a mismatch.
 
-<!-- {% hint style="info" %}
+
 Your armature in Blender needs to have a bone for every vertex group in the submesh, and there must not be vertices with no vertex group assigned.&#x20;
 
 You then need to import over an [already-existing .mesh file](troubleshooting-your-mesh-edits.md#option-2-the-netrunner-suit) which supports all those bones.
-{% endhint %} -->
+
 
 The following two scripts help you finding and/or fixing the problem. Switch to the Blender Scripting perspective and create a new, blank text file. Then, toggle the Blender system console to see their output (Blender: Window -> Toggle System Console)
 
@@ -43,14 +43,14 @@ You can use [this Python script](https://github.com/manavortex/code\_snippets/bl
 
 You can [import the mesh with Noesis](exporting-and-importing-meshes/#noesis-.fbx-2), which will not do any of these checks. For that, you need to import/export via .fbx.
 
-<!-- {% hint style="warning" %}
+
 Since noesis expects differently-named submeshes under the root armature, you'll want to export the mesh via noesis, join your changed meshes on those under Noesis\_Root, and import it again.\
 **Caution:** You'll have to rotate your armature in this case.
-{% endhint %} -->
 
-<!-- {% hint style="danger" %}
+
+
 While this will get your mesh into the game, the missing bones mean that parts of it won't move the way you expect it!
-{% endhint %} -->
+
 
 #### Option 2: The Netrunner suit
 
@@ -93,12 +93,12 @@ In Edit Mode, you can find a few commands in the Mesh -> Clean Up menu:
 * Merge By Distance\
 
 
-<!-- {% hint style="warning" %}
+
 &#x20;If you select your whole mesh, **Merge By Distance** will merge the individual parts, obliterating the seams. To avoid that, make sure to do them one after another:\
 \- Select a vertex/edge/face in Edit Mode\
 \- hold down Ctrl Num+ to select everything connected\
 \- use Merge By Distance before proceeding to the next part of your mesh
-{% endhint %} -->
+
 
 #### It's still broken
 
@@ -106,9 +106,9 @@ Your last option is the [3d print tool](https://docs.blender.org/manual/en/lates
 
 Fortunately, the tool is free, easy-to-use and already included in your Blender.
 
-<!-- {% hint style="info" %}
+
 If you don't have a 3d print entry in the tools of your 3d viewport, you might need to enable the plugin in Blender's settings first.
-{% endhint %} -->
+
 
 <figure><img src="../../.gitbook/assets/blender 3d print tool.png" alt=""><figcaption><p>Use the 3d print tool in edit mode to directly fix your issues</p></figcaption></figure>
 
@@ -178,9 +178,9 @@ If you have [added the item](../../modding-guides/items-equipment/adding-new-ite
 
 #### GarmentSupports
 
-<!-- {% hint style="info" %}
+
 To check if it's this, equip **only** the edited item. If it breaks as soon as you put on another clothing item with [garment supports](garment-support-how-does-it-work.md#the-algorithm), then the solution below applies.
-{% endhint %} -->
+
 
 Delete GarmentSupport from the mesh:
 

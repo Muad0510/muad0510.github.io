@@ -6,9 +6,9 @@ description: What kinds of textures exist, and what do they do?
 
 This page aims to give an overview on different kinds of textures and what the game is using them for.&#x20;
 
-<!-- {% hint style="info" %}
+
 By default, all textures in Cyberpunk2077 are Y-flipped (upside down). WolvenKit will take care of that for you during import/export via the `VFlip` property.
-{% endhint %} -->
+
 
 If you just want to know how to import/export textures, see [here](images-importing-editing-exporting.md).&#x20;
 
@@ -22,9 +22,9 @@ This texture is directly projected onto a mesh to give it colour and appearance.
 
 In the game files, these files will be named `<name>_d.xbm` (e.g. `base\environment\decoration\food\packaged_food\textures\synthetic_snack_01_d.xbm`)
 
-<!-- {% hint style="warning" %}
+
 When importing a diffuse texture with a non-default file name, make sure to check the isGamma box in the import properties.
-{% endhint %} -->
+
 
 ### Normal
 
@@ -34,9 +34,9 @@ Also known as "bump map", this texture is used to give a mesh depth and surface 
 
 In the game files, these files will be named `<name>_n.xbm` (e.g. `base\environment\decoration\food\packaged_food\textures\synthetic_snack_01_n.xbm`)
 
-<!-- {% hint style="info" %}
+
 For a guide how to make your own normal maps, see [here](../3d-modelling/self-made-normal-maps.md).
-{% endhint %} -->
+
 
 ### Roughness
 

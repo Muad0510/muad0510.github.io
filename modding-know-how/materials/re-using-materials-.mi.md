@@ -19,9 +19,9 @@ A .mi file **encapsulates** a material in a **reusable** template file. Take any
 
 Then, in your material, you can now use your .mi file as `baseMaterial`, and only change the properties that are actually different!
 
-<!-- {% hint style="success" %}
+
 For a collection of example .mi files, check [manavortex's MEGA](https://mega.nz/folder/KJ8DnBhK#VG0KzRhedBMRRsfd0Cdc0A).
-{% endhint %} -->
+
 
 Instead of copy-pasting six properties, you now copy-paste only two.
 
@@ -67,7 +67,7 @@ You can of course mix and match local and external materials! Just make sure tha
 
 However:
 
-<!-- {% hint style="danger" %}
+
 If you are using `preloadLocalMaterials`, you need to use `preloadExternalMaterials` instead of `externalMaterials.`
-{% endhint %} -->
+
 

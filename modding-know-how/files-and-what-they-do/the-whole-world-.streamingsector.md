@@ -4,13 +4,13 @@ description: Documentation on .streamingsector files
 
 # The whole world: .streamingsector
 
-<!-- {% hint style="info" %}
+
 If you want to know how to find a streaming sector, see [here](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-streaming-sectors-to-blender/finding-a-specific-sector).
 
 For a list of interesting locations, see [here](http://localhost:5000/s/-MP\_ozZVx2gRZUPXkd4r/modding-community/world-editing/interesting-sectors).&#x20;
 
 For a guide how to modify streaming sector files, see [here](../../modding-guides/world-editing/).
-{% endhint %} -->
+
 
 StreamingSectors are the files that define the world in Cyberpunk, they tell the engine what goes where, and define everything from the meshes you see and how you can interact with them, to the locations of lights, sounds and fx. They call up the NPCs, they define the minimap.&#x20;
 
@@ -20,7 +20,7 @@ The fundamental bits of the structure are 2 main lists, the nodes, and the nodeD
 
 Streaming Sectors contain the world's data, holding a node tree that includes all its models and entities.&#x20;
 
-<!-- {% hint style="info" %}
+
 Other than the world environment, streaming sector files can also define
 
 * navigation
@@ -29,7 +29,7 @@ Other than the world environment, streaming sector files can also define
 * illumination
 
 as there are several types.
-{% endhint %} -->
+
 
 ### LOD data and grid sizes
 
@@ -65,7 +65,7 @@ From those co-ordinates we can calculate the sector files for interior/exterior 
 
 At the level 0 files the whole building isn't covered by 1 sector, so you end up needing 4, conversely the exterior level 2 is several city blocks.&#x20;
 
-<!-- {% hint style="info" %}
+
 For example, the **loft apartment** uses these files:&#x20;
 
 `interior_-24_-16_1_1.streamingsector`: inner walls, floors, collision
@@ -74,7 +74,7 @@ For example, the **loft apartment** uses these files:&#x20;
 
 Note that the numbers are simply duplicated and rounded down. \
 _No, I don't know how you round down 2\*16 to 31 either._
-{% endhint %} -->
+
 
 Some locations are partially defined in **quest sectors**, where parts of the location are locked away behind story triggers (for example half of V's apartment, as a lot of decoration will only be shown after completing quests). The exact process isn't fully understood as of May 2023.
 

@@ -9,13 +9,13 @@ description: 'Step 2: How to create a custom NPC'
 **Created by @manavortex**\
 **Published May 13 2023**
 
-<!-- {% hint style="info" %}
+
 As much of the information here has been documented in [other guides](../appearances-change-the-looks.md), the information below will be kept initially brief. Might write more to a later point, but there is a lot of [documentation](../../../developers/vehicles/archive/.app-file-appearanceresource.md) already.
-{% endhint %} -->
+
 
 This page is a part of the [NPV guide](./). It will show you how to use the [provided example project](./#preparation) to create a custom NPC for Cyberpunk 2077, whom you can then spawn with AppearanceMenuMod.
 
-<!-- {% hint style="info" %}
+
 This guide assumes that&#x20;
 
 * you already have a head mesh (see [this section](npv-preparing-the-head-in-blender.md) otherwise)
@@ -28,11 +28,11 @@ This guide assumes that&#x20;
 
 
 It's not a problem if you use your own custom paths. You just need to keep that in mind when changing the provided .ent and .app file, as your paths will be different from those in the examples.
-{% endhint %} -->
 
-<!-- {% hint style="success" %}
+
+
 You can pack the Wolvenkit project and spawn Tutorial Man and Tutorial Woman via AMM to check out your progress.
-{% endhint %} -->
+
 
 ## The .lua file
 
@@ -98,9 +98,9 @@ tutorial\npv\your_female_character\ops\your_female_character.ent
 tutorial\npv\your_male_character\ops\your_male_character.ent
 ```
 
-<!-- {% hint style="info" %}
+
 [Would you like to know more?](../../../modding-know-how/files-and-what-they-do/entity-.ent-files/#root-entity)
-{% endhint %} -->
+
 
 The root entity hooks up your .app file and the appearance names in the .lua file, and that's about everything there is to say about it. Here's how it looks:
 
@@ -116,9 +116,9 @@ Let's look at the .app file now.
 
 ## The app file
 
-<!-- {% hint style="info" %}
+
 [Would you like to know more?](../../../developers/vehicles/archive/.app-file-appearanceresource.md)
-{% endhint %} -->
+
 
 This is where all of your NPC's components are defined — stuff like which rig they use, their facial expression set, the shadow they cast, but also their hair and equipment. For details, see the .app file's [overview page](../../../developers/vehicles/archive/.app-file-appearanceresource.md), for another guide on this, see [here](../appearances-change-the-looks.md).
 
@@ -132,9 +132,9 @@ To find out which variants and appearances to use, I suggest that you use NoraLe
 
 <figure><img src="../../../.gitbook/assets/npv_guide_part_picker_preview.png" alt=""><figcaption><p>Find it at <a href="https://noraleedoes.neocities.org/npv/npv_part_picker">https://noraleedoes.neocities.org/npv/npv_part_picker</a></p></figcaption></figure>
 
-<!-- {% hint style="info" %}
+
 This is where you select your eyebrow appearance — open up the mesh file and expand the first list `appearances`. There you can see a bunch of colours and numbers. The numbers correspond with the character editor, and you can look the colours up [here](../../../modding-know-how/references-lists-and-overviews/hair.md).
-{% endhint %} -->
+
 
 Each of the prepared .app files has two appearances, `casual` and `business`. I tried hooking up all the components for you (might have forgotten some). In that case, you simply duplicate any of the entSkinnedMeshComponents and change `depotPath` and `apperance`:
 
@@ -194,10 +194,10 @@ You can [check this guide](../appearances-change-the-looks.md), or look through 
 
 For guides on how to export a whole animated character to Blender, you can check [here](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender/exporting-rigs-and-anims).&#x20;
 
-<!-- {% hint style="danger" %}
-Please remember that **before sharing your NPV**, you **have** to change the paths! At the very least, rename the `tutorial` folders inside of `archive` and `resources` to your user name and then do a [fulltext search and replace in json](../../everything-else/moving-and-renaming-in-existing-projects.md).
-{% endhint %} -->
 
-<!-- {% hint style="success" %}
+Please remember that **before sharing your NPV**, you **have** to change the paths! At the very least, rename the `tutorial` folders inside of `archive` and `resources` to your user name and then do a [fulltext search and replace in json](../../everything-else/moving-and-renaming-in-existing-projects.md).
+
+
+
 Don't forget, you can pack the Wolvenkit project and spawn Tutorial Man and Tutorial Woman via AMM to check out your progress.
-{% endhint %} -->
+

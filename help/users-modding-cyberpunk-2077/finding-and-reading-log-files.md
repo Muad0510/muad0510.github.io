@@ -10,9 +10,9 @@ This section has a list of log files by framework. If you've arrived here from o
 
 If you aren't looking for a particular log file, please proceed to [the next section](finding-and-reading-log-files.md#finding-the-log-files).
 
-<!-- {% hint style="info" %}
+
 The paths below are given **relative** to your Cyberpunk 2077 install directory.
-{% endhint %} -->
+
 
 <table><thead><tr><th width="294">Name of framework</th><th>Path to log file</th></tr></thead><tbody><tr><td>redscript</td><td><code>r6\logs\redscript_rCURRENT.log</code></td></tr><tr><td>red4ext</td><td><code>red4ext\logs\red4ext.log</code></td></tr><tr><td>ArchiveXL</td><td><code>red4ext\plugins\ArchiveXL\ArchiveXL.log</code></td></tr><tr><td>TweakXL</td><td><code>red4ext\plugins\TweakXL\TweakXL.log</code></td></tr><tr><td>Cyber Engine Tweaks</td><td><code>bin\x64\plugins\cyber_engine_tweaks\cyber_engine_tweaks.log</code></td></tr></tbody></table>
 
@@ -33,21 +33,21 @@ If you don't want to download and run script files from the internet, you can go
 
 Browse to your [**Cyberpunk game folder**](#user-content-fn-1)[^1] and use the windows search to search for `*.log.`
 
-<!-- {% hint style="warning" %}
-Make sure to include the asterisk and the dot: \*`.log`, as you will otherwise see files that you don't care about.
-{% endhint %} -->
 
-<!-- {% hint style="info" %}
+Make sure to include the asterisk and the dot: \*`.log`, as you will otherwise see files that you don't care about.
+
+
+
 Make sure to run this [**in the game's root folder**](#user-content-fn-2)[^2], unless you have already narrowed down the problem (e.g. if it's a CET mod, you can run this search in `bin\x64\plugins\cyber_engine_tweaks`).
-{% endhint %} -->
+
 
 The list of results should look like this:
 
 <figure><img src="../../.gitbook/assets/userguide_logs.png" alt=""><figcaption><p>This will give you a long list of log files</p></figcaption></figure>
 
-<!-- {% hint style="info" %}
+
 You can sort this list by `file size`, `name`, or `date modified` by clicking on the corresponding header.
-{% endhint %} -->
+
 
 With a few exceptions, log files **have the name of their mod**. If they don't, check what folder they're in.
 
@@ -55,20 +55,20 @@ With a few exceptions, log files **have the name of their mod**. If they don't, 
 
 If you're drowning in log files and have no idea how to filter them, you can **delete** **or remove** them. Don't worry, they will be re-created on next launch.
 
-<!-- {% hint style="danger" %}
+
 Don't delete anything that isn't Type: `Text Document` ending in `.log`! Doing that will break other mods or even your entire install.
-{% endhint %} -->
+
 
 Now, restart your game and do whatever you did to make the error appear. Then, search the Cyberpunk directory for `*.log` again.
 
 ## Finding the relevant log file
 
-<!-- {% hint style="info" %}
+
 You can ignore files that&#x20;
 
 * have a `date modified` older than your last game launch: they won't have any information about your problem
 * have a size of 0: they're empty, the mod in question never initialized.
-{% endhint %} -->
+
 
 1. Sort the files by `size` (if you just deleted them) or by `date modified` (if you didn't)
 2. Open each of the files in a text editor (such as Notepad, it's installed with Windows). The relevant information will be at the very bottom.
@@ -81,9 +81,9 @@ You can ignore files that&#x20;
 
 ### Error
 
-<!-- {% hint style="success" %}
+
 There's definitely something going on here, you're on the right track!
-{% endhint %} -->
+
 
 Errors look like this:
 
@@ -100,10 +100,10 @@ An error in the log files almost always means that something exploded in a way t
 
 ### Warning
 
-<!-- {% hint style="info" %}
+
 If the mod with the warnings is working, you can ignore them.\
 If the game is crashing or if you can't find any errors, you can try the [bisect method](../../modding-know-how/user-guide-troubleshooting/#finding-the-broken-mod-bisecting) or [troubleshoot it](../../modding-know-how/user-guide-troubleshooting/#dealing-with-a-broken-mod) and hope that you're lucky.
-{% endhint %} -->
+
 
 If your warning isn't listed below, use your own best judgement.
 

@@ -13,9 +13,9 @@ base\animations\ui\photomode\photomode_male_facial.anims
 
 
 
-<!-- {% hint style="info" %}
+
 For a guide how to replace photo mode expressions, see [here](../../../modding-guides/photo-mode/custom-facial-expressions.md).
-{% endhint %} -->
+
 
 
 

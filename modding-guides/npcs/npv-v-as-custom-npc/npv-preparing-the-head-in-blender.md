@@ -7,11 +7,11 @@ description: 'Step 1: How to generate your V''s custom head mesh'
 **Created by @manavortex**\
 **Published May 13 2023**
 
-<!-- {% hint style="info" %}
+
 This page is a part of the [NPV guide](./). It will show you how to create your V's head in Blender.&#x20;
 
 You need the **prepared Wolvenkit project**, which is linked on the [main page](./#preparation).
-{% endhint %} -->
+
 
 ## Step 1: Getting head
 
@@ -21,29 +21,29 @@ You need the **prepared Wolvenkit project**, which is linked on the [main page](
    1. **Optional:** Be confused and/or panic about why there are over 9000 files **again**.&#x20;
 3. Delete all those files that you aren't using (read on as for how)
 
-<!-- {% hint style="info" %}
+
 **It's too many of them!**
 
 True! That's because I included all options for any given V. After you have deleted the ones that you won't be using, you should be left with a maximum of **7** files for female V and 8 files for male V.
-{% endhint %} -->
+
 
 I have included all meshes and morphtargets from the game files. We'll now thin out the options.
 
 ### The convenient option
 
-<!-- {% hint style="success" %}
+
 The best and most convenient tool for the job is [NoraLee's NPV picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker). It will give you a list of files that you need to keep.&#x20;
 
 The list will give you a number of **Source Mesh** entries like `h0_000_pwa_c__basehead.mesh`.&#x20;
 
 You need to keep these files inside the `head` folder and the `.morphtarget` file in the subfolder `morphtargets`. If you want to understand why, keep reading; otherwise, you can proceed to [Deleting Files](npv-preparing-the-head-in-blender.md#deleting-files).
-{% endhint %} -->
+
 
 ### What the actual fuck are all these files?
 
-<!-- {% hint style="info" %}
+
 If you don't care and just want to know what to delete, go [here](npv-preparing-the-head-in-blender.md#deleting-files).
-{% endhint %} -->
+
 
 #### Meshes vs Morphtargets
 
@@ -69,9 +69,9 @@ Here's what the prefixes mean:
 
 ### Finding the right piercing
 
-<!-- {% hint style="info" %}
+
 If your V isn't using any piercings, you can skip this step and go directly to [Deleting Files](npv-preparing-the-head-in-blender.md#deleting-files).
-{% endhint %} -->
+
 
 In the files, you will see four files for jewelry:&#x20;
 
@@ -88,9 +88,9 @@ You have to look at the meshes and find the file that includs your set of pierci
 
 ### Deleting files
 
-<!-- {% hint style="success" %}
+
 Number in file name <=> Number in character creator
-{% endhint %} -->
+
 
 Many of the files are **variants** and your V will be using **one or none of them.** That means you have a bunch of files to delete. If you have chosen [the convenient option](npv-preparing-the-head-in-blender.md#the-convenient-option) above, you should already have a list of files that you need to keep. Otherwise, the table below should give you some oversight.
 
@@ -139,9 +139,9 @@ Once you're done, you should have this many files:
 2. Switch to your project's `raw` folder or Wolvenkit's `raw` perspective. You will find the entire file structure mirrored there.
 3. Navigate to the `head` folder again and find the file `head_import.blend` there.
 
-<!-- {% hint style="info" %}
+
 It's a utility file for exactly this process. It needs to go into the `head` folder, because it will automatically import and export the files for you.
-{% endhint %} -->
+
 
 4. Open it in Blender. It will take you to the **scripting** perspective, where you'll see something like this:
 
@@ -153,33 +153,33 @@ It's a utility file for exactly this process. It needs to go into the `head` fol
 
 <figure><img src="../../../.gitbook/assets/npv_blender_00_import_2.png" alt=""><figcaption><p>select "01_apply_shapekeys.py" from the dropdown menu</p></figcaption></figure>
 
-<!-- {% hint style="info" %}
+
 If you've been previously afraid of scripting: This is a good place to stop! :))
-{% endhint %} -->
+
 
 8. Find line 32 and following in the script, and alter the values to those of your V (which you get from **the character preset**, see [here](npv-preparing-the-head-in-blender.md#the-character-preset) for further explanation).&#x20;
 
 <figure><img src="../../../.gitbook/assets/npv_blender_01_apply_shapekeys.png" alt=""><figcaption></figcaption></figure>
 
-<!-- {% hint style="info" %}
+
 You don't need to select the eyebrows here, as those are "painted on" later via mesh appearance. The mesh only needs to have the right shape, which is what we're doing here.
-{% endhint %} -->
+
 
 9. After you've changed the values to those of your V, click the "play" button again. This will apply the morphs to your V's face:
 
 <figure><img src="../../../.gitbook/assets/npv_tutorial_before_after.png" alt=""><figcaption></figcaption></figure>
 
-<!-- {% hint style="danger" %}
+
 Some shapekeys don't correspond 1:1 with their numbers in the character creator. If a part of your shape is shaped subtly wrong, **undo** your changes (Ctrl+Z), add or subtrat 1 from the corresponding shape key, and run the script again.
-{% endhint %} -->
+
 
 ## Step 3: Importing head
 
-<!-- {% hint style="info" %}
+
 Start by deleting the morphtargets — we don't need them anymore.
 
 Remove the entire folder, both from `raw` and `archive`. From now on, it's meshes only!
-{% endhint %} -->
+
 
 ### Exporting from Blender
 
@@ -195,9 +195,9 @@ Now it's time to get them back into Wolvenkit.
 2. Click "Import All"
 3. You're done!
 
-<!-- {% hint style="success" %}
+
 You can now start the game and look at your V's face to make sure that your head and eyes are showing up correctly . If it does, read on how to [hook up stuff for the game files](npv-creating-a-custom-npc.md). Otherwise, keep reading.
-{% endhint %} -->
+
 
 ### Can I have that with textures?
 

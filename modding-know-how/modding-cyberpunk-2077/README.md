@@ -4,9 +4,9 @@ description: Do-it-yourself!
 
 # ℹ Creators: Modding Cyberpunk 2077
 
-<!-- {% hint style="info" %}
+
 This page contains instructions on **making** mods. If you want to install mods instead, check [here](../../help/users-modding-cyberpunk-2077/).&#x20;
-{% endhint %} -->
+
 
 This section contains **general know-how** and theory.&#x20;
 

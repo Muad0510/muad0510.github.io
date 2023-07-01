@@ -21,9 +21,9 @@ This guide will teach you how to add custom animations to **AppearanceMenuMod**'
 
 
 
-<!-- {% hint style="info" %}
+
 This tutorial will use `animation` and `pose` interchangeably. An animation is simply a pose that moves.
-{% endhint %} -->
+
 
 ## Getting started
 
@@ -36,25 +36,25 @@ The screenshots show the example project, but it's absolutely no problem if you 
 
 <figure><img src="../../.gitbook/assets/amm_custom_poses_file_structure.png" alt=""><figcaption></figcaption></figure>
 
-<!-- {% hint style="success" %}
+
 If you have downloaded the example Wolvenkit project, you can start it (the "Install" button has an "Install and launch" option in the dropdown) to see everything in action: \
 \- Spawn an NPC (generic male or female)\
 \- Switch to the `Poses` tab\
 \- Find the `Netrunner making AMM mods` category and select one of the poses\
 \- Your NPC should now move!
-{% endhint %} -->
+
 
 ## Connecting the files
 
 Start by customizing your file structure. If you leave it as it is and publish the mod and somebody else does the same, only one of the two will work. Create a folder structure that is unique to you.
 
-<!-- {% hint style="info" %}
-It is good practice to leave `base` for the game files, and simply have a folder with your username at the root level of `archive`.&#x20;
-{% endhint %} -->
 
-<!-- {% hint style="danger" %}
+It is good practice to leave `base` for the game files, and simply have a folder with your username at the root level of `archive`.&#x20;
+
+
+
 Your file structure **must not** contain spaces, capital letters, or any funky characters, or the game might not find your files. Stick to `a-z`, `0-9`, `-` and `_`, and you're safe.
-{% endhint %} -->
+
 
 ### File structure: The .lua
 
@@ -96,9 +96,9 @@ Do not change anything else — we're done here.
 
 ### File structure: The .anim
 
-<!-- {% hint style="info" %}
+
 You don't need to change anything here yet, we'll be doing this [in the next step](amm-collab-anims-poses.md#custom-poses-the-.anims).
-{% endhint %} -->
+
 
 An .anims file is targeting a specific rig and holds a list of animations. These hold the pose data; they're what you overwrite when [importing from Blender](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/).
 
@@ -108,13 +108,13 @@ Scroll to the bottom of the file and  find the node named `workspotTree`. Open i
 
 Each of the `workWorkspotAnimsetEntries` inside `finalAnimset` connects animation files and rigs.&#x20;
 
-<!-- {% hint style="info" %}
-You can delete entries if you don't have animations for that rig.
-{% endhint %} -->
 
-<!-- {% hint style="info" %}
+You can delete entries if you don't have animations for that rig.
+
+
+
 The tutorial version uses the same .anim file for V's first person animations. Looks weird, but works. You can change it later on your own.
-{% endhint %} -->
+
 
 <figure><img src="../../.gitbook/assets/amm_custom_poses_workspot_animfile.png" alt=""><figcaption></figcaption></figure>
 
@@ -123,15 +123,15 @@ For each of the entries you keep, make sure that the following paths point at th
 * `animations.cinematics[0].animSet`
 * `loadingHandles[0]`
 
-<!-- {% hint style="warning" %}
+
 If you have launched the game before, make sure to delete the file&#x20;
 
 `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\mods\AppearanceMenuMod\Collabs\Custom Poses\your_optional_subfolder\amm_tutorial.lua`
-{% endhint %} -->
 
-<!-- {% hint style="success" %}
+
+
 A good time to check: make sure that everything works again and that the files are correctly connected. If not, check the [troubleshooting section](amm-collab-anims-poses.md#troubleshooting) of this guide.
-{% endhint %} -->
+
 
 ## Custom poses
 
@@ -139,9 +139,9 @@ Now that we have the basic structure covered, let's talk about pose names. This 
 
 ### Custom poses: The .anims
 
-<!-- {% hint style="info" %}
+
 Files for each type of rig are included in the example files, but you can also find them yourself by searching Wolvenkit for `rigName > .anims` or `character > .anims` (e.g. `massive > .anims` or `Smasher > .anims`)
-{% endhint %} -->
+
 
 Find and open your .anims file. Here's what you're looking at:
 
@@ -149,9 +149,9 @@ Find and open your .anims file. Here's what you're looking at:
 
 Open the animations array to see data for all defined animations (poses). You can make more by duplicating them, delete obsolete entries and change their names; any other changes are coming from Blender.
 
-<!-- {% hint style="info" %}
+
 An animation's name must match the `.lua` and the `.workspot`, spelling mistakes will break it. They must not contain spaces, use `_` instead. AMM will take care of that for you.
-{% endhint %} -->
+
 
 ### Custom poses: The .workspot
 
@@ -173,9 +173,9 @@ This list contains two `workSequences`. This data type is used for pose transiti
    2. Find the `workAnimClip`'s property `id` and add two to its numeric value (_orange on screenshot_)
 5. **Optional, but recommended:** Set the `workSequence`'s property `idleAnim`  to the name of your appearance (_purple on screenshot_). This is purely for your convenience, as you can see which is which when scrolling through the list.
 
-<!-- {% hint style="danger" %}
+
 The numeric values for the `id` properties need to be **unique** within the scope of the `workspotTree`. As soon as you have duplications here, things will be out of order.
-{% endhint %} -->
+
 
 ### Custom poses: The .lua
 
@@ -204,23 +204,23 @@ The lists tell AMM which poses belong to which rig, allowing to hide them when t
 
 ## Troubleshooting
 
-<!-- {% hint style="warning" %}
+
 If you have launched the project in its default state before starting to customize it, delete the file&#x20;
 
 `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\mods\AppearanceMenuMod\Collabs\Custom Poses\your_optional_subfolder\amm_tutorial.lua`
-{% endhint %} -->
 
-<!-- {% hint style="info" %}
+
+
 A pose gets correctly added by AMM if you see it in the list and can delete it.
-{% endhint %} -->
+
 
 ### AMM doesn't show my poses
 
 The problem is in your `.lua`, AMM fails to pick up the pose information you provided. You can check `AppearanceMenuMod.log`, which might tell you what's wrong, but it's probably fastest to just start over from the template `.lua` file.&#x20;
 
-<!-- {% hint style="info" %}
+
 Make sure that you don't add or delete any commas or quotation marks.
-{% endhint %} -->
+
 
 ### I click, but nothing happens (no pose shows up in AMM)
 

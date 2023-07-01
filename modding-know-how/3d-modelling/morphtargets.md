@@ -4,11 +4,11 @@ description: Overview of working with morphtargets
 
 # Morphtargets
 
-<!-- {% hint style="info" %}
+
 **COMPATIBILITY WARNING**\
 \
 Full `.morphtarget` editing is enabled in Wolvenkit **8.9.1-nightly** development builds. This content uses these new capabilities, and does not apply to previous workarounds.
-{% endhint %} -->
+
 
 ## Type Extension
 
@@ -55,24 +55,24 @@ So, some uses are probably already obvious. But targets enable quite a bit of ex
 * ...Or any aspect of character face customization. Vampire catboy Legolas here we come!
 * TBA
 
-<!-- {% hint style="info" %}
+
 The main limitation currently is that we do not have a way to add activations, at least generally. You need to hook into a target name that the engine already uses.
-{% endhint %} -->
+
 
 ## Working with Morphtargets
 
-<!-- {% hint style="info" %}
+
 _**`COMPATIBILITY WARNING`**_
 
 \
 `.morphtarget`s exported prior to the Wkit 8.9.1-nightly development versions contain incorrect data. It's possible that you'll encounter errors or strangeness with them on import or in-game.\
 \
 **For best results, you should start from a vanilla`.morphtarget` exported with Wkit 8.9.1-nightly or later.**
-{% endhint %} -->
 
-<!-- {% hint style="info" %}
+
+
 **This Section is Incomplete**
-{% endhint %} -->
+
 
 One thing deserves highlighting right up front: whenever you are doing _3D work_ on a model that has a  `.morphtarget`, **you work with the `.morphtarget`, not the`.mesh`**. The `.mesh` is only used for things the target doesn't include, like appearance definitions.\
 \

@@ -26,17 +26,17 @@ Would you rather…
 * [Replace meshes](../../../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item.md) without editing them?
 * Export [a whole character](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender) or [an animated character](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender/exporting-rigs-and-anims)?
 
-<!-- {% hint style="info" %}
+
 You can find a collection of useful Python scripts for Blender on [Simarilius's github](https://github.com/Simarilius-uk/CP2077\_BlenderScripts/).
-{% endhint %} -->
+
 
 You can import and export meshes via WolvenKit **or** [Noesis](autodesk-fbx-noesis.md) - both methods work.&#x20;
 
-<!-- {% hint style="danger" %}
+
 **Before you start editing, a warning:**
 
 It is easy to [break a mesh](./#troubleshooting-i-cant-import-my-mesh) beyond the point of repair. Make frequent back-ups, and continuously test if your altered mesh still imports and displays in WolvenKit, **especially when editing vertices!**
-{% endhint %} -->
+
 
 ## Exporting the mesh
 
@@ -51,9 +51,9 @@ WolvenKit > 8.8: Use the Export tool. You can toggle it from the "Tools" menu on
 
 <figure><img src="../../../.gitbook/assets/textured_items_raw_files.png" alt=""><figcaption></figcaption></figure>
 
-<!-- {% hint style="info" %}
+
 Wolvenkit > 8.8 will by default export with materials for the [Cyberpunk Blender Plugin](https://github.com/WolvenKit/Cyberpunk-Blender-add-on).
-{% endhint %} -->
+
 
 #### Path example&#x20;
 
@@ -65,19 +65,19 @@ Path of glb: `<yourModDir>\source\`**`raw`**`\base\characters\garment\player_equ
 
 ## Blender: Saving the mesh
 
-<!-- {% hint style="info" %}
+
 Some meshes (such as eyelashes and hair) are two-sided. See [here](broken-reference) for details on how Wolvenkit handles that.
-{% endhint %} -->
+
 
 ### glTF Binary  (\*.glb)
 
-<!-- {% hint style="warning" %}
-If you have touched the topology, make sure to **triangulate** your mesh before exporting (Select all in Edit Mode, `Ctrl+T`)
-{% endhint %} -->
 
-<!-- {% hint style="info" %}
+If you have touched the topology, make sure to **triangulate** your mesh before exporting (Select all in Edit Mode, `Ctrl+T`)
+
+
+
 You can use the [Cyberpunk Blender Plugin](https://github.com/WolvenKit/Cyberpunk-Blender-add-on) — it will take care of the necessary settings.
-{% endhint %} -->
+
 
 Make sure to check the box under Data > Mesh > Tangents, as Wolvenkit will not export without it.
 
@@ -85,17 +85,17 @@ Make sure to check the box under Data > Mesh > Tangents, as Wolvenkit will not e
 
 ## Importing to \*.mesh
 
-<!-- {% hint style="info" %}
+
 If you are following a guide with pre-made resources and it tells you to [import via Noesis,](autodesk-fbx-noesis.md) you'll want to follow the advice, as the elements in the exported structure will have different names.
 
 Alternatively, you can run [this script](https://github.com/manavortex/code\_snippets/blob/master/py/blender/convert\_gltf\_fbx.py) on your blend file, which will automatically fix that for you.
-{% endhint %} -->
+
 
 ### glTF Binary (\*.glb)
 
 In Blender, you should have **overwritten** your previously exported glb. With WKit's [Import/Export tool](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/import-export), you can now simply **`Import`** it back in.
 
-<!-- {% hint style="info" %}
+
 WolvenKit will map any \*.glb file under `raw` to the mesh with the same name under `source`.
 
 Example:
@@ -105,11 +105,11 @@ Example:
 will be imported over
 
 `<yourModDir>\archive\source\base\characters\garment\player_equipment\torso\t2_002_vest__puffy\t2_002_pwa_vest__puffy.mesh`
-{% endhint %} -->
 
-<!-- {% hint style="warning" %}
+
+
 WolvenKit refuses to import if the target mesh doesn't support all bones in the glb or if your mesh's topology became corrupted. If that's the case, check the [troubleshooting page](../self-made-normal-maps/troubleshooting-normal-maps.md).
-{% endhint %} -->
+
 
 ## Import/Export: \_doubled
 

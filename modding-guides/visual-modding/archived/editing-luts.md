@@ -6,9 +6,9 @@ coverY: 8
 
 # Editing LUTs
 
-<!-- {% hint style="warning" %}
+
 **This article is severely out of date.** Please tread lightly.
-{% endhint %} -->
+
 
 ## What is a LUT?
 

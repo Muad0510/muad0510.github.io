@@ -6,13 +6,13 @@ description: This page contains documentation for the most common component type
 
 
 
-<!-- {% hint style="info" %}
-[Comprehensive Components List](comprehensive-components-list.md) organized by hierarchy. Use for researching and documenting components.
-{% endhint %} -->
 
-<!-- {% hint style="info" %}
+[Comprehensive Components List](comprehensive-components-list.md) organized by hierarchy. Use for researching and documenting components.
+
+
+
 In general, your components should have a **globally unique name** so you can target them via [partsOverrides](../../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides). Feel free to ignore this, almost everyone else does as well, but it is the reason behind the convoluted names of CDPR's components.
-{% endhint %} -->
+
 
 ## Equipment/Hair
 
@@ -25,9 +25,9 @@ Can be used interchangeably with `entSkinnedMeshComponent`.
 * meshAppearance will select an appearance by name from the mesh's defined [appearances](broken-reference).
 * Lets you enable and disable **shadows** with the properties `castShadows` and `castLocalShadows`
 
-<!-- {% hint style="info" %}
+
 This is the good kind of mesh component, the one that will work without trouble, as opposed to [entSkinnedClothComponent](./#entskinnedclothcomponent).
-{% endhint %} -->
+
 
 ### entSkinnedMeshComponent
 

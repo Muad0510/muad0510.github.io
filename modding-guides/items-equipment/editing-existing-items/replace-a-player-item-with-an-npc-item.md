@@ -20,17 +20,17 @@ Other relevant know-how for this process:&#x20;
 
 For a guide how to import meshes into Cyberpunk, check [here](../../../modding-know-how/3d-modelling/exporting-and-importing-meshes/).
 
-<!-- {% hint style="danger" %}
+
 Make sure that you replace an item that you can actually spawn — not all items in V's folder are actually spawn-able.&#x20;
-{% endhint %} -->
+
 
 ## Step 1: Replace the mesh
 
 Find the mesh that you want to use ("**target mesh**") and replace it with the one that you want to switch in ("**source mesh**").
 
-<!-- {% hint style="info" %}
+
 Example: Replacing the short-sleeved poser jacket with the monk shirt with the tied-back sleeves.​
-{% endhint %} -->
+
 
 | target mesh | `base\characters\garment\player_equipment\torso\t2_084_jacket__short_sleeves\t2_084_pwa__short_sleeves.mesh`                |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -50,9 +50,9 @@ Example: Replacing the short-sleeved poser jacket with the monk shirt with the t
 
 Before we can edit the mlsetups, we need to find out which spawn code corresponds to which meshMeshAppearance. The process is pretty straightforward — it's documented [here](../../../modding-know-how/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#from-a-baseid-to-an-items-materials).
 
-<!-- {% hint style="info" %}
+
 The wiki has a list with [mappings](../../../modding-know-how/references-lists-and-overviews/equipment/variants-and-appearances.md) for easy lookup. Feel free to add to it!
-{% endhint %} -->
+
 
 
 
