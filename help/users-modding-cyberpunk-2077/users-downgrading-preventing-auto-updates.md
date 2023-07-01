@@ -4,13 +4,13 @@ description: Only update once all frameworks are stable!
 
 # Users: Downgrading / Preventing auto-updates
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 Things fall down when you let go of them, and mods break whenever a game updates. That is due to [framework compatibility](../../modding-know-how/core-mods-explained/).&#x20;
 
 **Always make sure that your framework mods are up-to-date.**
 
 You should generally wait with updating to the latest game version until all mods are up-to-date. If it's too late for that, you can try [downgrading](users-downgrading-preventing-auto-updates.md#downgrading) Cyberpunk, or wait until the frameworks update.
-{% endhint %}
+{% endhint %} -->
 
 ## Preventing the game from auto-updating
 
@@ -46,11 +46,11 @@ Unlike the competition, Steam will not give you any control about auto-updating.
 
 &#x20;![](<../../.gitbook/assets/image (2) (4).png>)&#x20;
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 As long as Steam can't write to this file, it can't update Cyberpunk. Once you are ready to update, simply uncheck the Read-only checkbox again.
 
 Don't forget to deactivate it again later!
-{% endhint %}
+{% endhint %} -->
 
 ## Downgrading
 

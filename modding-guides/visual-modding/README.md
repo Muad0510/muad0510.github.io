@@ -9,6 +9,6 @@ layout: landing
 
 # Visual Modding
 
-{% hint style="danger" %}
+<!-- {% hint style="danger" %}
 Very WIP. Some data may be out-of-date, as currently it is just one person maintaining this sector.
-{% endhint %}
+{% endhint %} -->

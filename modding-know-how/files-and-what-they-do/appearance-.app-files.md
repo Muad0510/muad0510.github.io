@@ -4,9 +4,9 @@ description: All the dirty detes on appearance files
 
 # Appearance: .app files
 
-{% hint style="success" %}
+<!-- {% hint style="success" %}
 If you want to modify an .app file to change an NPC's appearance, check [here](../../modding-guides/npcs/appearances-change-the-looks.md#the-.app-file)!
-{% endhint %}
+{% endhint %} -->
 
 ## Appearances
 
@@ -18,15 +18,15 @@ A list of components that are part of your current appearance. There are various
 
 
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 You can add components that will be included in every appearance to the root entity.
-{% endhint %}
+{% endhint %} -->
 
 ### partsValues
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 This only works for player equipment and weapons (April 2023)
-{% endhint %}
+{% endhint %} -->
 
 Allows you to add one or more [component entities](entity-.ent-files/#mesh-component-entity-simple-entity) into your appearance. They will be treated as if the components were part of the appearance's `components` array.
 

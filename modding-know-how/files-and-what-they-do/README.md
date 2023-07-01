@@ -8,9 +8,9 @@ description: What do the different files do? How do I mod them?
 **Published April 10 2023**\
 **Game version: 1.6.1\_DLSS**
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 For an exhaustive list, see the [W2RC File Format Table.](./#w2rc-file-format-table)
-{% endhint %}
+{% endhint %} -->
 
 ## .app (Appearance definition)
 
@@ -62,10 +62,10 @@ A mesh can have several **submeshes**, which can be displayed or hidden via [chu
 
 A material definition for a shader. You can assign those to **CMaterialInstance** entries in your mesh and then define their qualities by changing their parameters.&#x20;
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 For further detes on materials, see [here](../materials/). \
 For an explanation on .mi files, see [here](../materials/re-using-materials-.mi.md).
-{% endhint %}
+{% endhint %} -->
 
 ### Relevant properties:&#x20;
 
@@ -88,9 +88,9 @@ This file holds world environment information and -properties. Due to its comple
 
 A regular texture file. Can be exported to .png via WolvenKit, edited, and imported back into the game.&#x20;
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 If you stick to the game's naming schema, Wolvenkit will auto-detect the right import settings for you.
-{% endhint %}
+{% endhint %} -->
 
 ### Normal maps
 

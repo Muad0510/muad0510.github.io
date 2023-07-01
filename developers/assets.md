@@ -8,11 +8,11 @@ An asset is a specific, objectified concept in the game that can be highly detai
 
 The following list contains file formats that are used to compose visual assets such as vehicles and weapons.
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 The community-devloped tool **WolvenKit** can be used to browse game archives and extract game files.\
 \
 [Learn more](http://localhost:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/)
-{% endhint %}
+{% endhint %} -->
 
 ### MESH
 

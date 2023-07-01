@@ -13,14 +13,14 @@ This page is a look-up for [recolouring ](../../../modding-guides/items-equipmen
 
 As for how to find this information when it's not on the page, check [this guide](spawn-codes-baseids-hashes.md#the-.app).
 
-{% hint style="success" %}
+<!-- {% hint style="success" %}
 When adding an entry, please include the following information:
 
 * Relative path
 * Item spawn code(s)
 * Number of variants
 * Mapping of variant names to item spawn codes
-{% endhint %}
+{% endhint %} -->
 
 ## T1 (inner torso) — Shirts
 

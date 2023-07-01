@@ -8,9 +8,9 @@ description: The substance style super shader
 
 A significant portion of assets for Cyberpunk 2077 leverage the complex multilayered.mt supershader. The supershader has several different component files which are used to create masks to blend procedural textures without baking them. You can read more about this technique in [this documentation](https://magazine.substance3d.com/cyberpunk-2077-a-world-full-of-substance/) by CDPR Technical Art Director Krzysztof Krzyścin.
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 While the multilayered supershader is very common, there are hundreds of other non Substance-style shaders, some with traditional baked PBR textures.
-{% endhint %}
+{% endhint %} -->
 
 ## Composition
 
@@ -23,9 +23,9 @@ The multilayered shader is composed of three distinct parts:
 3. **Layer Surfaces** | Links PBR textures to create numerous pre-defined visual surfaces\
    [**.mltemplate files**](multilayered.md#what-is-the-mltemplate)
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 For editing mlsetup files, you'll want to use the [MlSetupBuilder](../../modding-tools/mlsetup-builder.md) ([download](https://github.com/Neurolinked/MlsetupBuilder))
-{% endhint %}
+{% endhint %} -->
 
 ## What is the mlmask?
 

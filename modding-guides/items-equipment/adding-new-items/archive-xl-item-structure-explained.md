@@ -39,9 +39,9 @@ secondaryKey: my_shirt_localization_name_white_red
 
 The value under `secondaryKey` **must** match the entry in your .yml file, or you will just see an empty string.
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 If you don't need a male-specific translation, you can leave it blank — by default, `femaleVariant` will be used.
-{% endhint %}
+{% endhint %} -->
 
 ### The .csv file (the factory)
 
@@ -89,18 +89,18 @@ This file controls the adding of items to the game. An entry looks like this:
     atlasPartName: slot_01                           &#x3C;&#x3C; slot name in .inkatlas file
 </code></pre>
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 The entry above will let you add the item via `Game.AddToInventory('Items.my_custom_shirt_redwhite')`
-{% endhint %}
+{% endhint %} -->
 
 Four **mappings** take place here:
 
 1. `entityName`: Points to the [factory.csv](archive-xl-item-structure-explained.md#the-.csv-file-the-factory) (see documentation there as for what it works)
 2. `appearanceName`: In the [root entity](archive-xl-item-structure-explained.md#rootentity.ent) specified in the factory, it will look for an appearance by this name.
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 The appearance name will only be considered up to the first [suffix](archive-xl-item-structure-explained.md#suffixes-and-whether-you-need-them). If you want to know what those pesky & things are doing in the file path,&#x20;
-{% endhint %}
+{% endhint %} -->
 
 3. `displayName`/`localizedDescription` : In the `translation_strings.json`, find an array where the value for \[3] (the last entry) is identical to this key. Then, check which gender V has, and display either `femaleVariant` or `maleVariant`.
 4. `icon:` This hooks up your custom preview.&#x20;
@@ -118,18 +118,18 @@ The following types of clothing exist:
 * Items.GenericLegClothing
 * Items.GenericFootClothing
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 The inherited properties can cause problems (see "[**Suffixes, and whether you need them**](archive-xl-item-structure-explained.md#suffixes-and-whether-you-need-them)" below for more detail). We're getting around these by manually overwriting them with `appearanceSuffixes: []`.
-{% endhint %}
+{% endhint %} -->
 
 You can absolutely set up a shirt and then put `$base: Items.GenericHeadClothing` - V is the only person I know of who can wear their undies on their head without impairing their functionality.\
 However, before you start abusing the system that way, you might want to look into [EquipmentEx](https://github.com/psiberx/cp2077-equipment-ex) instead.
 
-{% hint style="warning" %}
+<!-- {% hint style="warning" %}
 When editing this file, please keep in mind that **indent is important**!&#x20;
 
 The first line of each block **must not** have spaces, the blocks below must have the same amount of spaces. More spaces means more child, this can break your entire structure.
-{% endhint %}
+{% endhint %} -->
 
 ## The game files
 
@@ -148,9 +148,9 @@ This is how the files connect to each other. If your head explodes now, don't wo
 
 ### root\_entity.ent
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 [Would you like to know more?](../../../modding-know-how/files-and-what-they-do/entity-.ent-files/#root-entity) Full documentation of the root\_entity is on its own page.
-{% endhint %}
+{% endhint %} -->
 
 The entry point from your yaml, this file is a glorified lookup dictionary: for any `appearanceName`, it will specify an `.app` file and the name of an appearance in the `.app` file.
 
@@ -166,18 +166,18 @@ or
 name:                  appearance_root_entity_black_red&Suffixes
 ```
 
-{% hint style="danger" %}
+<!-- {% hint style="danger" %}
 If you [don't know what suffixes are](../../../modding-know-how/files-and-what-they-do/entity-.ent-files/.ent-files-suffixes.md), **you should not use them** because they can prevent your item from spawning.&#x20;
 
 To make sure of that, each entry in your [.yaml](archive-xl-item-structure-explained.md#the-control-file-yourmodname.yaml) should contain the following line:\
 &#x20; `appearanceSuffixes: []`&#x20;
-{% endhint %}
+{% endhint %} -->
 
 ### mesh\_entity.ent
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 [Would you like to know more?](../../../modding-know-how/files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity) Full documentation of the mesh\_entity is on its own page.
-{% endhint %}
+{% endhint %} -->
 
 For our purposes, this is a collection of components that we're pulling in from the .app file rather than re-defining it once per appearance.
 
@@ -201,11 +201,11 @@ The name will be used in `appearance.app`'s materialOverride array (see below)
 
 Contains a list of appearances as mapped by [`rootentity.ent`](archive-xl-item-structure-explained.md#rootentity.ent). Each of the appearances will load `mesh_entity.ent` via partsValues and specify&#x20;
 
-{% hint style="danger" %}
+<!-- {% hint style="danger" %}
 **For experienced modders**
 
 The .app file's component array should be **empty:** this is not an NPC appearance! :)
-{% endhint %}
+{% endhint %} -->
 
 An entry will look as follows:
 
@@ -223,9 +223,9 @@ For ArchivXL >= [1.4.0](https://github.com/psiberx/cp2077-archive-xl/releases/ta
 
 ### Mesh
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 [Would you like to know more?](broken-reference) The documentation for .mesh files lives on their own page!
-{% endhint %}
+{% endhint %} -->
 
 The mesh file maps **materials** to appearances. To find out how exactly it does that, find the [material section](broken-reference) on the mesh wiki page.&#x20;
 

@@ -30,9 +30,9 @@ Both genders will use
 
 `base\animations\facial\male_average\interactive_scene\generic_average_male_facial_idle.anims`
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 This will be called the **target file** in the rest of this guide
-{% endhint %}
+{% endhint %} -->
 
 ## Step 2: Replace the target file with the one you want
 
@@ -44,9 +44,9 @@ base\animations\facial\ *.anims
 
 Find the file that you want to use and copy it over the original file.
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 Although the file names are gendered, you can pick **any of them**.
-{% endhint %}
+{% endhint %} -->
 
 &#x20;If you aren't sure which file you want to use, check the [references](../../modding-know-how/references-lists-and-overviews/cheat-sheet-face-and-skin/cheat-sheet-facial-expressions.md#expression-references-for-individual-npc-files).&#x20;
 
@@ -68,11 +68,11 @@ base\animations\facial\male_average\interactive_scene\generic_average_male_facia
 
 Photo mode uses a total of 12 expressions by looking for [animation names](../../modding-know-how/references-lists-and-overviews/cheat-sheet-face-and-skin/cheat-sheet-facial-expressions.md#photo-mode) in the target file. You need to connect the selection picker with the NPC file you just copied.&#x20;
 
-{% hint style="success" %}
+<!-- {% hint style="success" %}
 Find their names [here](../../modding-know-how/references-lists-and-overviews/cheat-sheet-face-and-skin/cheat-sheet-facial-expressions.md).
 
 **Important:** AMM and photo mode use different keys. Just make sure to pick the right table, and everything will be fine.
-{% endhint %}
+{% endhint %} -->
 
 Do this by opening the target file (which you replaced with the NPC of your choice) in WolvenKit.&#x20;
 
@@ -82,15 +82,15 @@ Find the animation you want to use and change its name:
 
 Rinse and repeat the process until you're done.
 
-{% hint style="success" %}
+<!-- {% hint style="success" %}
 Save the file, pack the project, and start the game - voila, you now have custom expressions.
-{% endhint %}
+{% endhint %} -->
 
 ## References
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 You can find a list of screenshots with facial expression references [here](../../modding-know-how/references-lists-and-overviews/cheat-sheet-face-and-skin/cheat-sheet-facial-expressions.md#expression-references-for-individual-npc-files).
-{% endhint %}
+{% endhint %} -->
 
 ## Troubleshooting
 

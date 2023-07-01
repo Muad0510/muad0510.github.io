@@ -46,9 +46,9 @@ myNumber = <original number assignment> or 0
 myEverythingElse = <original object assignment> or {}
 ```
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 While that won't solve any other problems, it will at least make the error go away.
-{% endhint %}
+{% endhint %} -->
 
 ### Switch in LUA: Lookup Tables
 
@@ -91,11 +91,11 @@ Every single pass of the loop will create a memory representation of  "This is t
 end
 </code></pre>
 
-{% hint style="success" %}
+<!-- {% hint style="success" %}
 Takeaway:
 
 If at all possible, define things outside the scope of loops!
-{% endhint %}
+{% endhint %} -->
 
 #### Finding in strings
 
@@ -132,18 +132,18 @@ if string.find("catastrophe",  "dog")
 end
 ```
 
-{% hint style="success" %}
+<!-- {% hint style="success" %}
 Takeaway:
 
 * Avoid regex
 * prefer `String.find()` over `String.match()`
-{% endhint %}
+{% endhint %} -->
 
 #### Concatenation
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 For a performance analysis of different kinds of string concatenation, check [here](https://dannyguo.medium.com/how-to-concatenate-strings-in-lua-d2164cc5922f).
-{% endhint %}
+{% endhint %} -->
 
 ### Scopes
 

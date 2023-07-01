@@ -16,9 +16,9 @@ For a list of freckles and make-up sorted by colour and skin type, see NoraLee's
 
 ## Lipstick
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 For a mod fixing various mix-ups in the character creator, see [here](https://www.nexusmods.com/cyberpunk2077/mods/6788).
-{% endhint %}
+{% endhint %} -->
 
 Lipstick colours and styles are sorted in (more or less) ascending order in the appearance list in the mesh.&#x20;
 

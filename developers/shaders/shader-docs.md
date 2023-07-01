@@ -202,14 +202,14 @@ base\fx\shaders\television_ad.mt
 base\environment\decoration\advertising\digital\textures\animated\textures
 ```
 
-{% hint style="success" %}
+<!-- {% hint style="success" %}
 It's recommended that you use free tools like [Ezgif.com](https://ezgif.com/gif-to-sprite) to make .gif and convert it into a sprite sheet for AdTexture
-{% endhint %}
+{% endhint %} -->
 
 <figure><img src="../../.gitbook/assets/adtexture_sprite_sheet_example.jpg" alt=""><figcaption><p>AdTexture as Sprite Sheet Example. This is the Trauma Team news in the game.</p></figcaption></figure>
 
 * There are many screen shaders, this one is used for small TV screens.
 
-{% hint style="success" %}
+<!-- {% hint style="success" %}
 If used cleverly with a properly done mesh, you can make use of this shader to put animation on your clothing or other items
-{% endhint %}
+{% endhint %} -->

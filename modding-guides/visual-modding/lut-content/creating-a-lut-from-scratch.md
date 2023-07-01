@@ -8,9 +8,9 @@ coverY: 29
 
 # Creating a LUT from scratch
 
-{% hint style="danger" %}
+<!-- {% hint style="danger" %}
 This method is for LDR. Little to none is known about HDR LUT creation, so please, do not expect anything on HDR LUTs.
-{% endhint %}
+{% endhint %} -->
 
 ## What is a LUT, really?
 
@@ -67,9 +67,9 @@ Create a new project in WolvenKit and import the file `base\weather\24h_basic\lu
 
 ### DaVinci Resolve
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 If you have issues getting Resolve to run for the first time, uninstall the panels program. It causes crashes if you don't have any DaVinci panels or sliders.
-{% endhint %}
+{% endhint %} -->
 
 Create a Resolve project, and head straight over to the Fusion tab, without importing any media. Add a LUT Cube Creator node, change the type to vertical and size to 32, 48, or 64. Remember this number, as you will use it later. Select for the generated Media Out node to output to both sides of the preview by enabling both of the circles below it. On one of the sides, select Views>3D Histogram. You should now have a LUT cube present. If you'd like more accuracy, right click and go to 3D Histogram and select solid with 1:1 sampling.
 

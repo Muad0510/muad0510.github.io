@@ -5,9 +5,9 @@
 **Created by @Pinkydude**\
 **Published Summer 2021**
 
-{% hint style="danger" %}
+<!-- {% hint style="danger" %}
 As with AMM 2.0,  this guide is rather obsolete, but will be kept archived!
-{% endhint %}
+{% endhint %} -->
 
 ![](../../.gitbook/assets/0)
 

@@ -23,9 +23,9 @@ You're too fast, choomba: modders haven't gotten around to updating the framewor
 
 ### I updated my frameworks, but the game is still crashing!
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 You can try to temporarily disable any mod from the **script section** of[ known problem children](../../modding-know-how/user-guide-troubleshooting/#finding-the-broken-mod-known-problem-children). Sometimes, that fixes your issues.
-{% endhint %}
+{% endhint %} -->
 
 Your game and the core frameworks need to be **version-compatible**. You can make sure of that by
 
@@ -33,9 +33,9 @@ Your game and the core frameworks need to be **version-compatible**. You can mak
 2. One by one, [installing all of the frameworks you need](../../modding-know-how/user-guide-troubleshooting/#a-fresh-install-starting-from-scratch)
 3. [Restoring your mods from the backup](../../modding-know-how/user-guide-troubleshooting/#adding-back-your-mods)
 
-{% hint style="success" %}
+<!-- {% hint style="success" %}
 Make sure to follow the instructions carefully – they will prevent you from running into a bunch of other issues.&#x20;
-{% endhint %}
+{% endhint %} -->
 
 ## What other options do I have?
 
@@ -52,8 +52,8 @@ Of course, you can always
   * Enable all [core mods](users-troubleshooting-after-a-game-update.md#starting-from-scratch) and make sure that the game starts
   * Re-enable your other mods (check [bisect](users-troubleshooting-after-a-game-update.md#finding-the-broken-mod-bisecting) for how to do it fastest)
 
-{% hint style="warning" %}
+<!-- {% hint style="warning" %}
 You might want to **deactivate ReShade** before you start debugging. Especially after DLSS, it has been known to cause crashes.
 
 Likewise, you'll want to **turn off your antivirus** to rule it out as a problem source.
-{% endhint %}
+{% endhint %} -->

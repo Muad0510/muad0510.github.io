@@ -21,38 +21,38 @@ Before you start editing your mesh, you should delete its shapekeys. This is nec
 
 <figure><img src="../../.gitbook/assets/mesh_deform_shapekeys.png" alt=""><figcaption><p>Order matters, because deleting a shapekey will apply it. Start at the bottom!</p></figcaption></figure>
 
-{% hint style="success" %}
+<!-- {% hint style="success" %}
 Some people have been told to delete the Armature modifier before sculpting. **That's not necessary**!
-{% endhint %}
+{% endhint %} -->
 
 ## Sculpting
 
 The obvious approach is to change your mesh by moving vertices. However, this will take **a very long time** and probably be frustrating. A faster way is to use Blender's Sculpt Mode.
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 The downside of the sculpt mode is that it can edit **only the selected mesh**. \
 For a workaround, see [here](mesh-sculpting-techniques.md#affecting-several-meshes).
-{% endhint %}
+{% endhint %} -->
 
 The Sculpt Mode is pretty much What You See Is What You Get.&#x20;
 
 The easiest tools for beginners are **Grab,** **Elastic Deform,** and **Smooth**&#x20;
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 In the "Tool" panel (Toggle shortcut: N), you can optionally enable symmetry (blue on the picture below).
-{% endhint %}
+{% endhint %} -->
 
 <figure><img src="../../.gitbook/assets/mesh_deform_sculpting.png" alt=""><figcaption><p>Elastic Deform and x-symmetry are your friends!</p></figcaption></figure>
 
 A useful shortcut to keep in mind is **F**, which will let you change the cursor size.
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 You can import a body mesh as a reference.&#x20;
 
 You will find the player's body under\
 `base\characters\common\player_base_bodies\player_female_average\`\
 `base\characters\common\player_base_bodies\player_male_average\`
-{% endhint %}
+{% endhint %} -->
 
 ## Affecting only parts of the mesh
 
@@ -62,13 +62,13 @@ You can **hide** those parts that you don't want to sculpt.
 
 Use the Edit Mode (Shortcut: Tab) to make a selection. Then, leave only those parts visible that you want to affect before switching back to Sculpt Mode.
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 Useful hotkeys:
 
 * H: Hide selection
 * Shift+H: Hide everything **but** selected
 * Alt+H: Unhide everything
-{% endhint %}
+{% endhint %} -->
 
 #### Method 2 <a href="#method-2" id="method-2"></a>
 
@@ -102,19 +102,19 @@ To allow splitting, we need to make sure that every submesh has its own unique m
 
 <figure><img src="../../.gitbook/assets/mesh_deform_material.png" alt=""><figcaption><p>You can rename the material to e.g. "seams", but it's not necessary.</p></figcaption></figure>
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 Before the next step, make sure to remember the submesh numbers, because you need to restore them later. Changes in the submesh order will mess up material assignment in WolvenKit.
 
 You can create a copy by **duplicating** the meshes (shortcut: Shift+D)
-{% endhint %}
+{% endhint %} -->
 
 Now, join the meshes together — hold CTRL, select the main mesh, and join the meshes together (shortcut: Ctrl+J)
 
 <figure><img src="../../.gitbook/assets/mesh_deform_join.png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="success" %}
+<!-- {% hint style="success" %}
 You now have a single mesh which you can sculpt to your heart's content.
-{% endhint %}
+{% endhint %} -->
 
 Once you're done, you can separate the meshes again. Switch to **Edit Mode**, then select something that belongs to the former submesh. From the menu, pick the following entry:\
 `Select -> Select Similar (Hotkey: Shift+G) -> Material`
@@ -124,13 +124,13 @@ Once you're done, you can separate the meshes again. Switch to **Edit Mode**, th
 Then, split off the selection into its own submesh again: \
 `Right-Click -> Separate (Hotkey: P) -> Selection`
 
-{% hint style="success" %}
+<!-- {% hint style="success" %}
 Make sure to restore the original mesh names before [exporting your mesh from Blender](exporting-and-importing-meshes/#blender-saving-the-mesh).
-{% endhint %}
+{% endhint %} -->
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 After importing back into WolvenKit, remember to [delete the GarmentSupport](garment-support-how-does-it-work.md) parameters from your mesh, as they will now [produce string cheese](troubleshooting-your-mesh-edits.md#my-mesh-is-string-cheese-exploding-vertices).
-{% endhint %}
+{% endhint %} -->
 
 ### Lattice Modifier Method
 
@@ -167,9 +167,9 @@ Go to edit mode, select vertices and start moving them around to edit your base 
 
 When you are done, you do not have to apply this modifier. As long as your export settings are correct, and you remember to delete all Shape keys, the changes will be applied automatically upon export. That's why this method will make all the changes non-destructive and you can revert to vanilla by toggling the modifier.
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 You can stack modifiers to make desired changes to your mesh(es).
-{% endhint %}
+{% endhint %} -->
 
 ### Mesh Deform Modifier Method
 
@@ -220,21 +220,21 @@ To see the edits easier, select the cage mesh, then go to Object properties. Scr
 
 <figure><img src="../../.gitbook/assets/sculpting-affect-multiple-submeshes07.jpg" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 Hint: to make symmetrical changes, enable the symmetrical editing in Sculpt Mode. If your cage doesn't cover the whole base meshes, you can add a [Mirror Modifier](https://docs.blender.org/manual/en/latest/modeling/modifiers/generate/mirror.html) to the cage mesh. It will be reflected on your base meshes as well.
-{% endhint %}
+{% endhint %} -->
 
 After finishing sculpting, you don't have to apply the modifier to the base meshes. As long as your export settings are correct, and you remember to delete all Shape keys, the changes will be applied automatically upon export. That's why this method will make all the changes non-destructive and you can revert to vanilla by toggling the modifier.
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 You can cleverly combine these methods to make changes to your mesh as you desire.
-{% endhint %}
+{% endhint %} -->
 
 ## Troubleshooting
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 If your problem isn't listed here, check [Troubleshooting your mesh edits](troubleshooting-your-mesh-edits.md).
-{% endhint %}
+{% endhint %} -->
 
 ### Sculpt changes don't show before I enter and leave Sculpt Mode
 

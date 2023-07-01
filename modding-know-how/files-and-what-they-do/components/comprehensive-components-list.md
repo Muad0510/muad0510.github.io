@@ -6,13 +6,13 @@ description: Hierarchy of WolvenKit.RED4.Types.entIComponent
 
 
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 Full list of components, organized by hierarchy, useful for researching and documenting new components.
-{% endhint %}
+{% endhint %} -->
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 If you decide to document a component, make a new entry on the main page, followed by the discovered behavior and usage and link back to that in this list.
-{% endhint %}
+{% endhint %} -->
 
 * AIObjectSelectionComponent
 * AIOffMeshConnectionComponent

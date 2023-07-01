@@ -18,13 +18,13 @@ description: How to create normal maps (bumpmaps) with Blender
 | Version             | [Blender](https://www.blender.org/download/)>= 3.3                                                                                                                                                                       |
 | Assumed skill level | <ul><li>You know what a <a href="https://en.wikipedia.org/wiki/Normal_mapping">normal map</a> is</li><li>You're able to draw stick figures</li><li>You are not afraid of Blender</li><li>You know how to read.</li></ul> |
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 If you don't have Photoshop, Photopea offers almost the same thing online for free.
-{% endhint %}
+{% endhint %} -->
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 For a free tool for faster normal baking, check out [xnormal](https://xnormal.net/).
-{% endhint %}
+{% endhint %} -->
 
 ## Step 0: Preparing the viewport
 
@@ -47,13 +47,13 @@ As the first step, we create a [**Displacement Map**](https://de.wikipedia.org/w
 
 
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 This tutorial won't cover the process of how to draw such a map in-depth, but there will be a few tips how to do that in Blender.
-{% endhint %}
+{% endhint %} -->
 
-{% hint style="warning" %}
+<!-- {% hint style="warning" %}
 The displacement image should be saved in 32 bit image depth rather than the usual 8. This will yield better results with the normal maps.
-{% endhint %}
+{% endhint %} -->
 
 ### Texture Paint Mode
 
@@ -69,21 +69,21 @@ Switch to "Edit" (shortcut: Tab) and select all vertices (shortcut: ctrl+A). You
 
 <figure><img src="../../.gitbook/assets/normal_maps_uv_editing.png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 Feel free to change the UV mapping. You can [export](exporting-and-importing-meshes/#wolvenkit-.gdb-1) this back into Cyberpunk!
-{% endhint %}
+{% endhint %} -->
 
 ## Step 2: High Poly and Low Poly meshes
 
 Once you are done with your displacement map and the UV mapping looks like you want it to, it's time for the next step: projecting!
 
-{% hint style="warning" %}
+<!-- {% hint style="warning" %}
 Take your displacement map and create a **slightly blurry version** of it. This will prevent artifacts on the normal map, as the algorithm doesn't like perfectly straight edges.
-{% endhint %}
+{% endhint %} -->
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 I create a duplicate of my entire armature, just to make certain that I don't accidentally overwrite anything I want to keep. Only work on the new object, since we're getting destructive here.
-{% endhint %}
+{% endhint %} -->
 
 1. Make sure that your viewport is in Object Mode&#x20;
 2. Select all objects that you want to go on the same normal map, then **join** them together (shortcut: Ctrl+J).&#x20;
@@ -107,13 +107,13 @@ I create a duplicate of my entire armature, just to make certain that I don't ac
 7. Load your blurred texture:\
    ![](../../.gitbook/assets/normal\_maps\_texture\_tab.png)
 
-{% hint style="success" %}
+<!-- {% hint style="success" %}
 If you hide your "Low Poly" mesh, the modifiers should now let you see creases on your high poly object! Exciting!!
-{% endhint %}
+{% endhint %} -->
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 The normal map will only care for relative depth, so keep the creases on your mesh shallow. If you make them too sharp, this can lead to artifacts on the baked normal map.
-{% endhint %}
+{% endhint %} -->
 
 ## Step 3: Prepare the material
 
@@ -146,12 +146,12 @@ The high poly mesh needs to be completely covered by the low poly one, like plas
 
 ## Step 5: Baking
 
-{% hint style="danger" %}
+<!-- {% hint style="danger" %}
 In Blender, the "active" object is the "previously selected" one. Select your meshes in the following order:
 
 1. Low Poly
 2. 2\. High Poly
-{% endhint %}
+{% endhint %} -->
 
 Find the "Render Properties" tab.
 
@@ -171,9 +171,9 @@ Find the "Render Properties" tab.
 
 <figure><img src="../../.gitbook/assets/normal_maps_final.png" alt=""><figcaption><p>Things are looking like this now? Great, then click "Bake"!</p></figcaption></figure>
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 Baking takes time (several minutes) and most of your PC's free resources. This is normal.&#x20;
-{% endhint %}
+{% endhint %} -->
 
 If everything went well, the image editor on the bottom left will change and display your normal map.
 
@@ -183,9 +183,9 @@ You can export the image via the hamburger menu in the image editor (bottom left
 
 ## Troubleshooting
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 This troubleshooting section is for the baking process — the one for normal map textures is [here.](self-made-normal-maps/troubleshooting-normal-maps.md)
-{% endhint %}
+{% endhint %} -->
 
 ### My normal map has yellow stripes!
 
@@ -193,9 +193,9 @@ Make sure to [remove the normal mapping](self-made-normal-maps.md#step-3-prepare
 
 ### My normal map has yellow spots!
 
-{% hint style="success" %}
+<!-- {% hint style="success" %}
 First of all, make sure that all your normals are pointing the right way. In the viewport editor, click the "Show Overlays" button and select "Geometry -> Face Orientation" near the bottomn. Blue means outside, red means inside.
-{% endhint %}
+{% endhint %} -->
 
 The baking process works by capturing the rays of light that bounce between the high poly mesh and the low poly mesh. If you have artifacts, then some of those rays bounced off something else first, which makes them register as inverted. That's the reason why steep creases are a problem — a ray of light might get caught in there and be flipped around.&#x20;
 

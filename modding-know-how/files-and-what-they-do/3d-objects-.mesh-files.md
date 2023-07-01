@@ -11,19 +11,19 @@ This page contains information on .mesh files and their properties.
 * If you want to mess with a .mesh's materials, see [here](../../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md).
 * A mesh file's shadow is defined in via .[component](components/#entgarmentskinnedmeshcomponent)
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 In the context of Cyberpunk, a mesh is the file that defines the topology[^1] and the materials[^2] of an object in the game world.
 
 A mesh can have several **submeshes**, each of which has own material assignments.
-{% endhint %}
+{% endhint %} -->
 
 ## Material assignment
 
 ### Step 1: Appearances
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 This page only contains mesh-specific information. Find more details on materials, check [here](3d-objects-.mesh-files.md#materials).&#x20;
-{% endhint %}
+{% endhint %} -->
 
 This is how to determine which parts of the mesh have which material:
 
@@ -68,19 +68,19 @@ For more details on material definitions, [check here](../materials/).
 
 The materials themselves are inside the array `localMaterialBuffer.materials` (or `preloadLocalMaterials` in case of older meshes).&#x20;
 
-{% hint style="success" %}
+<!-- {% hint style="success" %}
 You can't go wrong by using those. However, if you don't have any properties that are unique to your mesh or appearance (for example a custom normal map), you might consider [creating and using an external material instead](../materials/re-using-materials-.mi.md).
-{% endhint %}
+{% endhint %} -->
 
 A material instance looks like this:
 
 <figure><img src="../../.gitbook/assets/material_docu_material_instance.png" alt=""><figcaption><p>baseMaterial picks the material (shader), while "values" contains <a href="3d-objects-.mesh-files.md#checking-material-properties">properties</a> to adjust it.</p></figcaption></figure>
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 For an overview of materials that you might want to use for something, check [here](../references-lists-and-overviews/cheat-sheet-materials.md).&#x20;
 
 For how to find out which properties a material has, check [here](../materials/#checking-material-properties).
-{% endhint %}
+{% endhint %} -->
 
 ### Material reference: [reusing materials](../materials/re-using-materials-.mi.md#maximally-lazy-external-materials)
 

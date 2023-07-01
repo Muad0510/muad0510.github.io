@@ -87,9 +87,9 @@ Items.my_custom_shirt_redwhite:
     atlasPartName: slot_01
 ```
 
-{% hint style="warning" %}
+<!-- {% hint style="warning" %}
 Again, please note that indent is **crucial** here, as it determines the node structure. The first line needs to have an indent of 0, the lines from `$base` to `icon` need to have two spaces, and the lines `atlasResourcePath` and `atlasPartName` need to have four.
-{% endhint %}
+{% endhint %} -->
 
 That's it! Time to test!
 

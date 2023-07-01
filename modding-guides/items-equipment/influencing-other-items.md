@@ -15,9 +15,9 @@ This guide will explain how to influence meshes by directly in the .app file, ov
 
 ## PartsOverrides
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 This section assumes that you're loading appearance parts via [associated .ent file](adding-new-items/#mesh\_entity.ent) rather than including them as components.
-{% endhint %}
+{% endhint %} -->
 
 In the .app file, each appearance lets you define [PartsOverrides](adding-new-items/#appearance.app), which — as the name implies — let you override the appearance of parts. An entry looks as follows:
 
@@ -27,9 +27,9 @@ Where **partsValues** lets you define the individual entity files that you'll lo
 
 <figure><img src="../../.gitbook/assets/partsOverrides2.png" alt=""><figcaption><p>componentsOverride > .ent file</p></figcaption></figure>
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 Components need to be **unambiguously** identified by their name as defined in the .ent file. For that reason, it's good practice to have globally unique identifiers.&#x20;
-{% endhint %}
+{% endhint %} -->
 
 Starting with version >= [1.4.0](https://github.com/psiberx/cp2077-archive-xl/releases/tag/v1.4.0-rc2), ArchivXL can understand the following variables for `meshAppearance` in `appearanceOverrides`:
 
@@ -43,11 +43,11 @@ So depending on your PC's body gender and colouring, the meshAppearance `my_app_
 
 #### Arms
 
-{% hint style="warning" %}
+<!-- {% hint style="warning" %}
 If you want to affect V's arms (for example, hiding clipping shoulders under a jacket), you might have to override the following components:
 
 The male equivalent will have `pma` instead of `pwa`
-{% endhint %}
+{% endhint %} -->
 
 ```
 a0_001_pwa_base_hq__full              // default arms
@@ -93,9 +93,9 @@ To delete an already existing reference, set the numeric value to the right of t
 
 In the .app file, each appearance will contain an array by the name of `visualTags.tags`. These will let you hide parts of other meshes.
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 This mechanism is how e.g. your sunglasses disappear when you put on a helmet.
-{% endhint %}
+{% endhint %} -->
 
 They can be used **additionally** to partsOverrides.
 
@@ -107,9 +107,9 @@ The following tags are used by the base game; however, to make use of them, you 
 
 <table><thead><tr><th width="241">Tag</th><th width="517">Effect</th></tr></thead><tbody><tr><td><code>hide_H1</code></td><td>Hides item in the <code>Head</code> slot (<em>hats, caps, headbands</em>)</td></tr><tr><td><code>hide_F1</code></td><td>Hides item in the <code>Eyes</code> slot (<em>sunglasses, face masks</em>)</td></tr><tr><td><code>hide_T1</code></td><td>Hides item in the <code>Chest</code> slot (<em>shirts, tops</em>)</td></tr><tr><td><code>hide_T2</code></td><td>Hides item in the <code>Torso</code> slot (<em>jackets, coats</em>)</td></tr><tr><td><code>hide_L1</code></td><td>Hides item in the <code>Legs</code> slot (<em>pants, skirts</em>)</td></tr><tr><td><code>hide_S1</code></td><td>Hides item in the <code>Feet</code> slot (<em>shoes</em>)</td></tr><tr><td><code>hide_T1part</code></td><td>Torso item: controls the partial suffix (<code>&#x26;Full</code>/<code>&#x26;Part</code>)</td></tr><tr><td><code>hide_Hair</code></td><td>Hides hair (<em>hair</em>)</td></tr><tr><td><code>hide_Genitals</code></td><td>Replaces genitals/underwear with blank mesh, angel style.</td></tr></tbody></table>
 
-{% hint style="warning" %}
+<!-- {% hint style="warning" %}
 `hide_Genitals` will hide **only** the genitals, not the entire body submesh!
-{% endhint %}
+{% endhint %} -->
 
 ArchiveXL additionally defines the following [visual tags](https://github.com/psiberx/cp2077-archive-xl#adding-visual-tags):
 

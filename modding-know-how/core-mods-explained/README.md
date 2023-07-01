@@ -4,9 +4,9 @@ description: A list of modding frameworks and links to their documentation
 
 # ⚒ Core Mods explained
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 You're probably used to the term **Core Mod** from other games. However, the technical term for these kinds of mod is a`framework`, which is what they're usually referred to by Cyberpunk modders.
-{% endhint %}
+{% endhint %} -->
 
 ## What is a framework?
 
@@ -14,9 +14,9 @@ While the game natively supports mods, this would have had us limited to replaci
 
 The most prominent example of a framework mod is the **Skyrim Script Extender** — fortunately, Cyberpunk 2077 is rather more stable.
 
-{% hint style="danger" %}
+<!-- {% hint style="danger" %}
 Since this kind of mod interacts with the game's code on such a fundamental level, they are prone to **breaking** whenever CDPR changes their API. This is the reason why game updates break mods — we recommend to [**turn off auto-update**](../../help/users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md) and manually upgrading once the frameworks you need have been brought up-to-date.
-{% endhint %}
+{% endhint %} -->
 
 ## Existing Frameworks <a href="#popular-frameworks" id="popular-frameworks"></a>
 
@@ -44,9 +44,9 @@ Redscript ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/1511) | [GitHub]
 
 RED4ext ([Nexus ](https://www.nexusmods.com/cyberpunk2077/mods/2380)| [GitHub](https://github.com/WopsS/RED4ext/releases)) is Cyberpunk 2077's equivalent to Skyrim Script Extender. It adds further scripting capability on top of what CDPR has so kindly provided, loading scripts from `/red4ext/plugins`.
 
-{% hint style="warning" %}
+<!-- {% hint style="warning" %}
 To play nice with redmod, RED4ext requires [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176) to be installed.
-{% endhint %}
+{% endhint %} -->
 
 Aside from being required for many mods, it is a perquisite for other frameworks such as ArchiveXL, TweakXL, and Equipment-EX.
 
@@ -124,12 +124,12 @@ Cyberpunk 2077\r6\logs\redscript_rCURRENT.log
 
 It will tell you which `.reds` files it has been loading, and if any of them failed.&#x20;
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 Please note the **warning** in the log:&#x20;
 
 * If the mod is working, ignore it
 * If the mod isn't working, this tells you what to check. You can't have mods installed twice!
-{% endhint %}
+{% endhint %} -->
 
 If all goes well, it will look like this:
 
@@ -195,9 +195,9 @@ Tells you which .xl files have been found and processed and what it has been add
 
 If it loads correctly, you will see something like this:
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 Note that the example contains a bunch of warnings. That indicates problems with the modded files (which I ignore, since they are working),&#x20;
-{% endhint %}
+{% endhint %} -->
 
 ```log
 [2023-04-22 10:08:06.654] [info] Scanning for archive extensions...

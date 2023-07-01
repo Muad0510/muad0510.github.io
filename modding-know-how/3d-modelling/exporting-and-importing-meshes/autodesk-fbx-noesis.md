@@ -4,9 +4,9 @@ description: How to import/export meshes with Noesis
 
 # Autodesk/FBX (Noesis)
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 Noesis is an **alternative** to exporting with WolvenKit. There are legitimate use cases for why you would want this. If you don't know them, **you probably don't.**
-{% endhint %}
+{% endhint %} -->
 
 ### TL;DR:&#x20;
 
@@ -18,9 +18,9 @@ Noesis is outdated. Go import/export [with Wolvenkit](./).
 
 Given that you're still reading this, you probably have a reason to use Noesis, so here we go.
 
-{% hint style="warning" %}
+<!-- {% hint style="warning" %}
 To use Noesis, you need the [Noesis Import/Export Plugin](https://github.com/alphazolam/fmt\_CP77mesh?msclkid=384152bfaa5611ecbad0234dbe6a5c45).
-{% endhint %}
+{% endhint %} -->
 
 <table><thead><tr><th width="293">Tool</th><th>Tool version</th></tr></thead><tbody><tr><td><a href="https://www.blender.org/download/">Blender</a></td><td>>= 3.1 stable</td></tr><tr><td><a href="https://richwhitehouse.com/index.php?content=inc_projects.php">Noesis</a><br><a href="https://github.com/alphazolam/fmt_CP77mesh?msclkid=384152bfaa5611ecbad0234dbe6a5c45">Noesis Import/Export Plugin</a></td><td>>= 4.459<br>>= Sep 28, 2021</td></tr></tbody></table>
 

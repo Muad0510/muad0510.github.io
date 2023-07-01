@@ -8,9 +8,9 @@ coverY: -385
 
 # Advanced: Reverse-Engineered LUT pipeline
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 This is a complex document meant for experts. Made hastily to finally get the method out there and let others experiment with it. Will be expanded as time goes on.
-{% endhint %}
+{% endhint %} -->
 
 ## Understanding CDPR's rendering pipeline
 

@@ -13,10 +13,10 @@ This tutorial will teach you how to create your own MultilayerMask for an item a
 
 Difficulty: You know how to read.
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 To find out what an MLMask does, see [here](../modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md#what-is-the-mlmask). \
 To learn about MLSetups, see [here](../modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md#what-is-the-mlsetup).
-{% endhint %}
+{% endhint %} -->
 
 ## Export the MultilayerMask
 
@@ -75,9 +75,9 @@ This will give you the following file structure:
 
 Now, save the image: overwrite one of the layers from the mlmask that you have exported. If you run out of layers, you can just add them at the end.
 
-{% hint style="danger" %}
+<!-- {% hint style="danger" %}
 The game assumes that layer 1 is white, so start exporting over layers >0
-{% endhint %}
+{% endhint %} -->
 
 <figure><img src="../../.gitbook/assets/2023-04-12 20_54_54-Blender.png" alt=""><figcaption></figcaption></figure>
 
@@ -87,9 +87,9 @@ Do this as often as necessary.&#x20;
 
 Once you're done, open the masklisk and make sure that you have exactly as many entries as you have images in your folder (adding or deleting them as needed). Then, in Wolvenkit, import the masklist via **Import Tool**.
 
-{% hint style="danger" %}
+<!-- {% hint style="danger" %}
 All images in the multilayer mask need to have the same resolution. Otherwise, it will crash your game.
-{% endhint %}
+{% endhint %} -->
 
 You can now assign your new Masklisk to your mesh and use it together with custom [MultilayerSetups](../modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md#what-is-the-mlsetup).&#x20;
 

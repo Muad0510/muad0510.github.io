@@ -28,11 +28,11 @@ This guide will teach you how to create a customizable by chaining an .ent, an .
 
     <figure><img src="../../.gitbook/assets/amm_props_structure.png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 The first part of the structure is up to you, although for the sake of the tutorial you might want to stick to it and [change it at the end](moving-and-renaming-in-existing-projects.md). The section about [Creating another prop](custom-props.md#creating-another-prop) will tell you how to change file and folder names in all the files.
 
 The second part (under "resources") is where AMM will look for custom props. You can't change it other than creating subfolders under "Custom Props".
-{% endhint %}
+{% endhint %} -->
 
 ### Explanation
 
@@ -71,7 +71,7 @@ return {
 
 Without a `lua` file, AMM (as of version 2.1) won't be able to spawn your props.&#x20;
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 `name` is what you'll search for in AMM
 
 `category` is for AMM sorting
@@ -79,7 +79,7 @@ Without a `lua` file, AMM (as of version 2.1) won't be able to spawn your props.
 `distanceFromGround` is pretty self-explanatory (I like floating objects)
 
 `appearances` registers the variant names.
-{% endhint %}
+{% endhint %} -->
 
 #### Entity file
 
@@ -99,13 +99,13 @@ As a reminder, this is how the old variant used to look:
 
 This file holds the specifics by defining a list of `appearances`. Inside each appearance, you can define any number of things to be loaded (components) and specify or override their behaviour.
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 We will only use `entPhysicalMeshComponent`s, and they must be named  `amm_prop_slot1` .. `amm_prop_slot4` if you want to enable scaling.
-{% endhint %}
+{% endhint %} -->
 
-{% hint style="warning" %}
+<!-- {% hint style="warning" %}
 If you have more than four mesh files assigned to your app's components, the prop will no longer be scaleable (as of AMM 2.1). You can get around this limitation by making meshes with more submeshes instead of individual files.
-{% endhint %}
+{% endhint %} -->
 
 #### template\_textured.mesh
 
@@ -114,9 +114,9 @@ A pre-configured mesh for a textured material. Uses the following files in the s
 * `template_01_d.xbm`: A diffuse (albedo) map, colouring the mesh
 * `template_01_n.xbm`: A normal (bump) map, adding depth to the object.
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 If you stick to this naming convention and have your filenames end in `_d` or `_n`, Wolvenkit will recognize and identify the correct settings for image import.
-{% endhint %}
+{% endhint %} -->
 
 #### template\_multilayered.mesh
 
@@ -126,9 +126,9 @@ A pre-configured mesh for a textured material. Uses the following files in the s
 * `6_layers.mlmask`: A [multilayer mask](../../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md), determining which parts of the mesh are affected by which layer of the mlsetup. In this case, it just contains six blank layers.
 * `template_01_n.xbm`: A normal (bump) map, adding depth to the object.
 
-{% hint style="success" %}
+<!-- {% hint style="success" %}
 If you have downloaded the example Wolvenkit project, you can now install it and launch the game, seeing everything in action.
-{% endhint %}
+{% endhint %} -->
 
 ### Diagram
 
@@ -144,9 +144,9 @@ Creating props without variants is even easier than doing it with the `.app`, as
 
 ## Creating another prop
 
-{% hint style="success" %}
+<!-- {% hint style="success" %}
 This step is **optional**. If you just want to see how this works, you can pack your project with Wolvenkit and search AMM for "tutorial item". However, assuming that you actually want to make cool things, you will be doing this a lot.
-{% endhint %}
+{% endhint %} -->
 
 If you want to create another prop, here's the fastest non-script way to go about it (tried and tested by manavortex):
 
@@ -181,9 +181,9 @@ Now you can launch the game and check your prop. If everything went well, you sh
 
 If not, it is time to hit up the [troubleshooting](custom-props.md#troubleshooting).
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 If you want to learn more about materials, you can check out [this guide](textured-items-and-cyberpunk-materials.md) or browse the documentation section's [material pages](../../modding-know-how/materials/).
-{% endhint %}
+{% endhint %} -->
 
 <figure><img src="https://i.imgur.com/GQ8fELd.png" alt=""><figcaption><p>Not a moon</p></figcaption></figure>
 

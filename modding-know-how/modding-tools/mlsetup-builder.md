@@ -18,18 +18,18 @@ MLSB can be downloaded from the releases section on GitHub, the latest release t
 
 ## Setup of export and preview function
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 MLSB lets you edit mlsetup files without doing this, but you'll have neither auto-generated mlsetup files, nor previews and material previews.
-{% endhint %}
+{% endhint %} -->
 
-{% hint style="warning" %}
+<!-- {% hint style="warning" %}
 Before you do this, you should have extracted a [partial depot](https://wiki.redmodding.org/wolvenkit/guides/modding-community/eli5-getting-started/create-depot#steps-partial-depot).
-{% endhint %}
+{% endhint %} -->
 
-{% hint style="danger" %}
+<!-- {% hint style="danger" %}
 This process requires [WolvenKit CLI](https://github.com/WolvenKit/WolvenKit/releases) (not identical to normal WolvenKit).\
 ATTENTION: For MLSB versions <= 1.6.6, you need to use [WolvenKit.Console Version 1.5.2](https://github.com/WolvenKit/WolvenKit/releases/tag/8.4.3)
-{% endhint %}
+{% endhint %} -->
 
 Open the preferences via "File" -> "Preferences".&#x20;
 
@@ -44,23 +44,23 @@ Set the following values:
 
 
 
-{% hint style="danger" %}
+<!-- {% hint style="danger" %}
 `Uncook Folder` and **Wolvenkit Depot Path** have to be the same folder!
 
 For MLSB versions <= 1.6.6, you need to use [WolvenKit.Console Version 1.5.2](https://github.com/WolvenKit/WolvenKit/releases/tag/8.4.3) and restart after changing the settings.
-{% endhint %}
+{% endhint %} -->
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 Starting with version 1.6.5, adding the WKit.CLI enables the auto-export function, where MLSB will generate an \*.mlsetup file when you save an \*.mlsetup.json
-{% endhint %}
+{% endhint %} -->
 
 
 
 ### Library and preview
 
-{% hint style="info" %}
+<!-- {% hint style="info" %}
 To take advantage of the **Preview** function, you need a folder with the meshes in \*.glb and the materials and mask layers. This takes about 20GB of disk space
-{% endhint %}
+{% endhint %} -->
 
 Open the menu "Build" and select first "Repository" to uncook the archives:
 
@@ -74,9 +74,9 @@ Click "**Uncook**". A file selector will open.&#x20;
 
 Navigate to the same path you set under "Game archives folder", and press OK.
 
-{% hint style="danger" %}
+<!-- {% hint style="danger" %}
 This process can take several hours!
-{% endhint %}
+{% endhint %} -->
 
 After the process is complete, select "Microblends" to extract the microblends, normals, decals and layer masks.
 

@@ -6,9 +6,9 @@ description: How to set up an atelier store for your mod
 
 This guide will detail how to add an Atelier store with your items. It is part of the [Adding new items](./) ArchiveXL tutorial, but you can complete these steps independently.
 
-{% hint style="warning" %}
+<!-- {% hint style="warning" %}
 You need to install the [VirtualAtelier](https://www.nexusmods.com/cyberpunk2077/mods/2987) mod for this. You also have to add it to your mod's requirements, as the store won't work if users don't have it installed.
-{% endhint %}
+{% endhint %} -->
 
 ## Generating an icon
 
@@ -77,7 +77,7 @@ resources
 
 Now, it's time to test! Install the mod and start Cyberpunk.
 
-{% hint style="warning" %}
+<!-- {% hint style="warning" %}
 If starting Cyberpunk via WolvenKit does not generate your atelier store, install the mod and launch the game by regular means.
-{% endhint %}
+{% endhint %} -->
 
