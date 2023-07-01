@@ -6,17 +6,17 @@ description: Weapon, armour, consumable, hair, cyberware..
 
 Welcome to the modding equipment section. Here, you can find guides on how to edit equipment and wepaons in Cyberpunk. The section is split into three sub-pages:
 
-{% content-ref url="adding-new-items/" %}
+
 [adding-new-items](adding-new-items/)
-{% endcontent-ref %}
 
-{% content-ref url="editing-existing-items/" %}
+
+
 [editing-existing-items](editing-existing-items/)
-{% endcontent-ref %}
 
-{% content-ref url="influencing-other-items.md" %}
+
+
 [influencing-other-items.md](influencing-other-items.md)
-{% endcontent-ref %}
+
 
 ## Wait, that's not what I want!
 

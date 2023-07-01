@@ -16,9 +16,9 @@ For an exhaustive list, see the [W2RC File Format Table.](./#w2rc-file-format-ta
 
 This file contains a list of appearances with their associated **components**. To load them, you require a [root entity](./#root-entity) .ent.
 
-{% content-ref url="appearance-.app-files.md" %}
+
 [appearance-.app-files.md](appearance-.app-files.md)
-{% endcontent-ref %}
+
 
 Holds a list of components.
 
@@ -34,17 +34,17 @@ From ArchiveXL item additions, this kind of file is usually called a **root enti
 
 **For player items**, an .ent file can serve as a **wrapper**, splitting components out of the .app file by putting them in their own file.
 
-{% content-ref url="entity-.ent-files/" %}
+
 [entity-.ent-files](entity-.ent-files/)
-{% endcontent-ref %}
+
 
 ## Components
 
 Not a file type but an internal data structure and part of [.ent](./#.ent-entity) or [.app](./#.app-appearance-definition) files. Components are how the game adds anything to the in-game world, from pag3d data over player interaction prompts to explosion sounds.
 
-{% content-ref url="components/" %}
+
 [components](components/)
-{% endcontent-ref %}
+
 
 ## .inkatlas (Texture mapping)
 
@@ -80,9 +80,9 @@ For an explanation on .mi files, see [here](../materials/re-using-materials-.mi.
 
 This file holds world environment information and -properties. Due to its complexity, information is grouped on its sub-page.&#x20;
 
-{% content-ref url="the-whole-world-.streamingsector.md" %}
+
 [the-whole-world-.streamingsector.md](the-whole-world-.streamingsector.md)
-{% endcontent-ref %}
+
 
 ## .xbm (Texture)
 

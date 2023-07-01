@@ -40,9 +40,9 @@ With all that backstory done--how do we start?!
 
 All of these can be found with a quick Google search, but the last requirement is a bit strange. We need an _**old**_ version of CP77Tools. Pre-WolvenKit days. You can find it here:&#x20;
 
-{% embed url="https://github.com/WolvenKit/CP77Tools/releases" %}
+
 You're looking for the latest release. It requires .NET 5.0 runtime (desktop runtime preferred).
-{% endembed %}
+
 
 ### **Okay, now we can get started!**
 

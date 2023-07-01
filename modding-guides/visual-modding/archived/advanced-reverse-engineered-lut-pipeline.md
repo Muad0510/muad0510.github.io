@@ -131,18 +131,18 @@ There it is. Your tonemapped LUT from scratch.
 2. Normally I'd try to make the entire thing seem more accessible in general, but really, this is an extremely complex topic that would take some experts press their eyes in frustration. I know it happened to me a ton.
 3. If you're looking for pre-made examples, I have a few right here:
 
-{% file src="../../../.gitbook/assets/AWG3-ACES-GamutCompress.xbm" %}
+
 Gamut compressed LUT using AWG3 gamut conversion, looks a bit desaturated.
-{% endfile %}
 
-{% file src="../../../.gitbook/assets/AWG3-LogC.xbm" %}
+
+
 A method which I didn't have the ability to go over in the entry, but gives surprisingly pleasant results in both AWG3 conversion and SRGB.
-{% endfile %}
 
-{% file src="../../../.gitbook/assets/SRGB-ACES-GamutCompress.xbm" %}
+
+
 Gamut compressed, ACES-tone mapped without AWG3 gamut conversion. Has clipping problems that are simply inherent to the incorrect color due to not using AWG3 conversion, but has a very unique look.
-{% endfile %}
 
-{% file src="../../../.gitbook/assets/SRGB-LogC.xbm" %}
+
+
 A variant of the undocumented method that is similar to the ACES-tone mapped SRGB LUT but has less clipping.
-{% endfile %}
+

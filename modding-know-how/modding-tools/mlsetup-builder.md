@@ -14,7 +14,7 @@ description: Editing item materials
 
 MLSB can be downloaded from the releases section on GitHub, the latest release this documentation refers to is the version 1.6.6
 
-{% embed url="https://github.com/Neurolinked/MlsetupBuilder/releases/" %}
+
 
 ## Setup of export and preview function
 
@@ -85,10 +85,10 @@ There is also a dedicated thread on the [Cyberpunk 2077 Modding Discord Server](
 
 ## Video Guides
 
-{% embed url="https://www.youtube.com/watch?v=uCOHjMPvpgc" %}
-Credits to EzioMavericks for the video
-{% endembed %}
 
-{% embed url="https://www.youtube.com/watch?list=PLViyQUe4oow0l-amhDzneys9nzJxyH64n&v=vpT_crK5K1M" %}
+Credits to EzioMavericks for the video
+
+
+
 [A playlist by the original author](https://www.youtube.com/playlist?list=PLViyQUe4oow0l-amhDzneys9nzJxyH64n)
-{% endembed %}
+

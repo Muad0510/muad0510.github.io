@@ -296,13 +296,13 @@ Start by making a copy of the `mesh_entity.ent` file that you previously created
 
 Inside the `mesh_entity_m.ent` file, find the first component of the type `entGarmentSkinnedMeshComponent`. Set the following values:
 
-{% code overflow="wrap" %}
+
 ```
 mesh:   DepotPath:   tutorial\torso\my_custom_shirt\my_mesh_m.mesh      << path to your mesh  
         Flags:       Default                               << leave this alone  
 name:   my_shirt_m    << this corresponds to the appearanceOverride in appearance.app  
 ```
-{% endcode %}
+
 
 <figure><img src="../../../.gitbook/assets/meshentity.png" alt=""><figcaption><p><em>All of the changes made to <strong>mesh_entity_m.ent</strong> file</em></p></figcaption></figure>
 

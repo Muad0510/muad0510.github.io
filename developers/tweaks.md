@@ -14,9 +14,9 @@ The Tweak DB can be interacted with using Cyberpunk's official **REDmod**, or nu
 
 ## Player Garments/Equipment Graph
 
-{% embed url="https://github.com/psiberx/cp2077-tweak-xl" %}
 
-{% embed url="https://github.com/psiberx/cp2077-archive-xl" %}
+
+
 
 The following is a diagram which maps the relationship between game files for use with TweakXL and Archive XL:
 

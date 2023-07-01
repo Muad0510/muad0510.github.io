@@ -353,7 +353,7 @@ Congratulations, you have found which folder causes the problem — you're more 
 
 Repeat this process until you've identified the mod that's crashing your game.
 
-{% embed url="https://youtu.be/c1BkM6NFfkI" %}
+
 
 ## Mod(s) aren't loading/triggering
 

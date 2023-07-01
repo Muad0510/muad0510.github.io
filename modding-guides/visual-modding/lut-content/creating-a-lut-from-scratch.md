@@ -27,35 +27,35 @@ But, aside from that, they are similar. Any LUT expects an input of a color, wit
 
 ## Prerequisites
 
-{% tabs %}
-{% tab title="NVIDIA Texture Tools Exporter" %}
+
+
 A backup of NVTT can be found here
 
-{% file src="../../../.gitbook/assets/NVIDIA_Texture_Tools_2023.2.0.exe" %}
+
 
 If you don't trust a random exe file, that's good, but if you want to download it from the source you need to create or use your current NVIDIA account and add yourself to the developer program.
 
-{% embed url="https://developer.nvidia.com/nvidia-texture-tools-exporter" %}
-{% endtab %}
 
-{% tab title="DaVinci Resolve" %}
+
+
+
 DaVinci's website prompts you to fill out some data before being able to download the software. You can fill this out with fake data, it doesn't really matter.
 
-{% embed url="https://www.blackmagicdesign.com/products/davinciresolve" %}
+
 
 You can use Fusion Studio just as easily as well for parts of the guide, and DaVinci Resolve Studio is also recommended in general.
-{% endtab %}
 
-{% tab title="WolvenKit" %}
+
+
 The essential tool for all Cyberpunk modding. Nightly is preferred (and what this guide has been made with), but stable works just as well with newer versions (older versions will have errors).
 
-{% embed url="https://github.com/WolvenKit/WolvenKit-nightly-releases" fullWidth="false" %}
-{% endtab %}
-{% endtabs %}
+
+
+
 
 By the way, if you just wanna skip the steps on repeat projects, there is a reference GitHub repository containing NVTT settings, DaVinci Resolve and WolvenKit projects, as well as pre-made LUT files if you just wanna test them out quickly.
 
-{% embed url="https://github.com/nullfrctl/Realcolorr" %}
+
 
 ## Workflow
 
@@ -93,7 +93,7 @@ Add an ACES Transform node after the Color Space Transform node. Set the input t
 
 This method uses LUTs from ARRI themselves, and as such gives us two options: LogC3 and LogC3 "classic". I encourage you to use the normal LogC3 LUT, but experiment with Classic and see if you like it. Though, this method requires a change in the settings that are described later.
 
-{% embed url="https://www.arri.com/en/learn-help/learn-help-camera-system/tools/lut-generator" %}
+
 
 In the link above, select LogC wide gamut as the source format and destination format as video. Select your preference of ARRI Classic 709 and ARRI 709 in the conversion parameter. The file type can be either Blackmagic Fusion or Blackmagic DaVinci Resolve, it really doesn't matter.
 

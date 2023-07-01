@@ -111,6 +111,6 @@ Next, press the 3 small lines below the output, click on Show LaTeX, and copy th
 And now repeat all of those steps for each of your bones... enjoy...\
 After that, you should be finished!
 
-{% embed url="https://streamable.com/sdkxvc" %}
+
 Final result&#x20;
-{% endembed %}
+

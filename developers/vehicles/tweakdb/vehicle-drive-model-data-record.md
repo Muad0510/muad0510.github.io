@@ -1,6 +1,6 @@
 # Vehicle Drive Model Data Record
 
-{% code title="Vehicle.VehicleDriveModelDataDefault_4w.tweak" %}
+
 ```yaml
 groups:
   Vehicle.VehicleDriveModelDataDefault_4w:
@@ -223,4 +223,4 @@ groups:
         type: TweakDBID
         value: "CarDrivingFrictionMap.Default" 
 ```
-{% endcode %}
+

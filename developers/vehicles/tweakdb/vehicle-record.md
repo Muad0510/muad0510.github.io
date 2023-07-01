@@ -4,7 +4,7 @@ This is the main vehicle record in TweakDB, referenced from `VehicleObject` in t
 
 [`entityTemplatePath`](../archive/.ent-file-ententitytemplate.md) is an important field here, because this is the file that ties our record to the resource files needed for rendering.
 
-{% code title="Vehicle.vehicle_template.tweak" %}
+
 ```yaml
 groups:
   Vehicle.vehicle_template:
@@ -275,4 +275,4 @@ groups:
           type: raRef:CResource
           value: 0
 ```
-{% endcode %}
+

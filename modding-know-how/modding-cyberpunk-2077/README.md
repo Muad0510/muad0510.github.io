@@ -21,6 +21,6 @@ This section contains **general know-how** and theory.&#x20;
 
 If you are looking for guides to follow, check the **Modding: Guides** section:
 
-{% content-ref url="broken-reference" %}
+
 [Broken link](broken-reference)
-{% endcontent-ref %}
+

@@ -73,9 +73,9 @@ We can see that the `basic_01` appearance is using the `default` material, and t
 To find your way through the mesh, check the guide for [recoloring items](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#step-2-finding-the-correct-appearance)!
 
 
-{% content-ref url="../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md" %}
+
 [changing-materials-colors-and-textures.md](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md)
-{% endcontent-ref %}
+
 
 
 
