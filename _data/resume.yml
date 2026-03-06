@@ -1,0 +1,95 @@
+# ─── Resume Data ─────────────────────────────────────────────────────────────
+# Edit this file to update all resume/CV content site-wide.
+# The resume page and PDF output are both generated from this data.
+
+summary: >
+  Senior 3D Artist and Art Director with 8+ years of experience crafting 
+  high-fidelity environments and characters for AAA games, film, and 
+  interactive media. Passionate about bridging technical rigor with artistic 
+  vision, leading teams from concept through final render.
+
+experience:
+  - company: "Studio Luminary"
+    role: "Lead 3D Artist"
+    period: "2021 – Present"
+    location: "Amsterdam, NL"
+    highlights:
+      - "Led a 6-person art team through full production cycle of two shipped titles, delivering all 3D assets on time and within polygon budgets."
+      - "Architected a PBR material library reducing per-asset setup time by 40% across the studio."
+      - "Collaborated with technical directors to implement procedural environment systems in Houdini, replacing manual terrain workflows."
+      - "Mentored 3 junior artists, all of whom were promoted within 18 months."
+
+  - company: "Meridian Games"
+    role: "Senior Environment Artist"
+    period: "2018 – 2021"
+    location: "Berlin, DE"
+    highlights:
+      - "Created hero environments for a shipped open-world RPG (3M+ copies sold), responsible for biome consistency and visual storytelling."
+      - "Developed modular asset kits that reduced environment build time by 30%."
+      - "Worked directly with art director to establish the game's visual language and style guide."
+      - "Shipped 2 DLC expansions as sole environment artist under tight 3-month timelines."
+
+  - company: "Pixel Foundry"
+    role: "3D Artist"
+    period: "2016 – 2018"
+    location: "Utrecht, NL"
+    highlights:
+      - "Produced high-poly and game-ready assets for 4 shipped mobile and PC titles."
+      - "Created character models from concept sheets through final LODs, bakes, and textures."
+      - "Established naming conventions and folder structures adopted across all future projects."
+
+education:
+  - institution: "Amsterdam University of the Arts"
+    degree: "Bachelor of Fine Arts — Digital Media & Animation"
+    period: "2012 – 2016"
+    note: "Graduated with Honours. Thesis: Procedural World-Building in Real-Time Engines."
+
+  - institution: "GNOMON Workshop"
+    degree: "Advanced Environment Art Certificate"
+    period: "2017"
+    note: "Online program. Focus on photorealistic environment creation for games."
+
+skills:
+  primary:
+    - name: "Blender"
+      level: "Expert"
+    - name: "ZBrush"
+      level: "Expert"
+    - name: "Unreal Engine 5"
+      level: "Expert"
+    - name: "Substance 3D Painter"
+      level: "Expert"
+    - name: "Houdini"
+      level: "Advanced"
+    - name: "Maya"
+      level: "Advanced"
+    - name: "Marvelous Designer"
+      level: "Proficient"
+    - name: "Photoshop"
+      level: "Expert"
+    - name: "Marmoset Toolbag"
+      level: "Advanced"
+    - name: "Rizom UV"
+      level: "Advanced"
+
+  soft:
+    - "Art Direction"
+    - "Team Leadership"
+    - "Visual Storytelling"
+    - "Pipeline Development"
+    - "Client Communication"
+    - "Code Review"
+
+certifications:
+  - name: "Epic Games — Unreal Engine Authorized Instructor"
+    year: "2023"
+  - name: "Adobe Substance 3D Certified Professional"
+    year: "2022"
+
+languages:
+  - language: "English"
+    level: "Native"
+  - language: "Dutch"
+    level: "Conversational"
+  - language: "German"
+    level: "Basic"

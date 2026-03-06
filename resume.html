@@ -1,0 +1,144 @@
+---
+layout: default
+title: Resume
+description: "CV and resume for {{ site.author.name }}, {{ site.author.title }}"
+---
+
+{% assign r = site.data.resume %}
+{% assign a = site.author %}
+
+<!-- PDF Download bar -->
+<div class="pdf-bar">
+  <div class="pdf-bar__inner">
+    <p>
+      💡 Use your browser's <strong>Print → Save as PDF</strong> for a clean, 
+      ATS-compliant CV download. Or click the button.
+    </p>
+    <button class="btn btn--primary" id="printResume" onclick="window.print()">
+      ↓ Download PDF
+    </button>
+  </div>
+</div>
+
+<div class="resume-page">
+
+  <!-- ─── HEADER ────────────────────────────────────── -->
+  <header class="resume-head container">
+    <div>
+      <h1 class="resume-head__name">{{ a.name }}</h1>
+      <p class="resume-head__role">{{ a.title }}</p>
+    </div>
+    <div class="resume-head__contact">
+      <a href="mailto:{{ a.email }}">{{ a.email }}</a>
+      <a href="{{ a.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="{{ a.artstation }}" target="_blank" rel="noopener">ArtStation</a>
+      {% if a.github %}
+      <a href="{{ a.github }}" target="_blank" rel="noopener">GitHub</a>
+      {% endif %}
+      <span>{{ a.location }}</span>
+    </div>
+  </header>
+
+  <!-- ─── BODY LAYOUT ───────────────────────────────── -->
+  <div class="resume-layout">
+
+    <!-- Main column -->
+    <main>
+
+      <!-- Professional Summary -->
+      {% if r.summary %}
+      <blockquote class="resume-summary">
+        {{ r.summary }}
+      </blockquote>
+      {% endif %}
+
+      <!-- Work Experience -->
+      <section class="rs">
+        <h2 class="rs__label">Work Experience</h2>
+        {% for job in r.experience %}
+        <article class="exp-item">
+          <div class="exp-item__top">
+            <h3 class="exp-item__role">{{ job.role }}</h3>
+            <span class="exp-item__period">{{ job.period }}</span>
+          </div>
+          <p class="exp-item__co">{{ job.company }}</p>
+          <p class="exp-item__loc">{{ job.location }}</p>
+          <ul class="exp-item__list">
+            {% for item in job.highlights %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </article>
+        {% endfor %}
+      </section>
+
+    </main>
+
+    <!-- Sidebar -->
+    <aside class="resume-sidebar">
+
+      <!-- Core Skills -->
+      <section class="rs">
+        <h2 class="rs__label">Core Skills</h2>
+        {% for skill in r.skills.primary %}
+        <div class="skill-row">
+          <span class="skill-row__name">{{ skill.name }}</span>
+          <span class="skill-row__lvl">{{ skill.level }}</span>
+        </div>
+        {% endfor %}
+      </section>
+
+      <!-- Soft Skills -->
+      <section class="rs">
+        <h2 class="rs__label">Strengths</h2>
+        <div class="soft-tags">
+          {% for skill in r.skills.soft %}
+          <span class="soft-tag">{{ skill }}</span>
+          {% endfor %}
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="rs">
+        <h2 class="rs__label">Education</h2>
+        {% for edu in r.education %}
+        <div class="edu-item">
+          <p class="edu-item__deg">{{ edu.degree }}</p>
+          <p class="edu-item__school">{{ edu.institution }}</p>
+          <p class="edu-item__period">{{ edu.period }}</p>
+          {% if edu.note %}
+          <p class="edu-item__note">{{ edu.note }}</p>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </section>
+
+      <!-- Certifications -->
+      {% if r.certifications %}
+      <section class="rs">
+        <h2 class="rs__label">Certifications</h2>
+        {% for cert in r.certifications %}
+        <div class="cert-item">
+          <strong>{{ cert.name }}</strong>
+          {{ cert.year }}
+        </div>
+        {% endfor %}
+      </section>
+      {% endif %}
+
+      <!-- Languages -->
+      {% if r.languages %}
+      <section class="rs">
+        <h2 class="rs__label">Languages</h2>
+        {% for lang in r.languages %}
+        <div class="lang-row">
+          <span class="lang-row__lang">{{ lang.language }}</span>
+          <span class="lang-row__lvl">{{ lang.level }}</span>
+        </div>
+        {% endfor %}
+      </section>
+      {% endif %}
+
+    </aside>
+  </div>
+</div>

@@ -1,0 +1,121 @@
+---
+layout: default
+title: Contact
+description: "Get in touch with {{ site.author.name }}"
+---
+
+<section class="contact-page">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- ─── Left: Contact info ─────────────────────── -->
+      <div class="contact-left">
+        <p class="eyebrow" style="margin-bottom:0.75rem;">Get in Touch</p>
+        <h1>Let's make<br>something good.</h1>
+        <p class="lead">
+          Whether it's a full-time role, a freelance project, 
+          a collaboration, or just to say hello — I'm easy to reach 
+          and always happy to talk shop.
+        </p>
+
+        <!-- Availability badge -->
+        <div class="avail-badge">
+          {% if site.author.availability %}
+          <div class="dot dot-green"></div>
+          {{ site.author.availability_text }}
+          {% else %}
+          <div class="dot dot-grey"></div>
+          Currently unavailable
+          {% endif %}
+        </div>
+
+        <!-- Email -->
+        <a href="mailto:{{ site.author.email }}" class="contact-email">
+          {{ site.author.email }}
+        </a>
+
+        <!-- Social links -->
+        <div class="socials">
+          <a href="{{ site.author.artstation }}" target="_blank" rel="noopener" class="social-row">
+            <div>
+              <div class="social-row__name">ArtStation</div>
+              <div class="social-row__handle">Full portfolio & process work</div>
+            </div>
+            <span class="social-row__arrow">↗</span>
+          </a>
+
+          <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener" class="social-row">
+            <div>
+              <div class="social-row__name">LinkedIn</div>
+              <div class="social-row__handle">Professional history</div>
+            </div>
+            <span class="social-row__arrow">↗</span>
+          </a>
+
+          {% if site.author.github %}
+          <a href="{{ site.author.github }}" target="_blank" rel="noopener" class="social-row">
+            <div>
+              <div class="social-row__name">GitHub</div>
+              <div class="social-row__handle">Open-source tools & scripts</div>
+            </div>
+            <span class="social-row__arrow">↗</span>
+          </a>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- ─── Right: Contact form ────────────────────── -->
+      <div class="contact-right">
+        <h2>Send a message</h2>
+        <p class="sub">
+          This form uses <a href="https://formspree.io" target="_blank" rel="noopener" style="color:var(--accent);">Formspree</a> 
+          to deliver messages to your inbox. Replace <code>YOUR_FORM_ID</code> in 
+          the form action URL with your Formspree form ID to activate it.
+          <br><br>
+          Alternatively, just <a href="mailto:{{ site.author.email }}" style="color:var(--accent);">email directly</a>.
+        </p>
+
+        <!-- 
+          To activate: 
+          1. Sign up at https://formspree.io (free tier)
+          2. Create a form and copy your form ID
+          3. Replace YOUR_FORM_ID below
+        -->
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="_subject" value="New message from {{ site.author.name }}'s portfolio">
+
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@studio.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">What's this about?</label>
+            <select id="subject" name="subject">
+              <option value="">Select a topic</option>
+              <option value="fulltime">Full-time opportunity</option>
+              <option value="freelance">Freelance / contract work</option>
+              <option value="collab">Collaboration</option>
+              <option value="other">Just saying hello</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me what you're working on..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center;">
+            Send Message →
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>

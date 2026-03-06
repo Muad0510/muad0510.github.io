@@ -1,0 +1,42 @@
+<header class="site-header" id="siteHeader">
+  <nav class="nav" aria-label="Main navigation">
+
+    <!-- Logo / Name -->
+    <a href="{{ '/' | relative_url }}" class="nav__logo" aria-label="{{ site.author.name }} home">
+      {{ site.author.initials }}
+    </a>
+
+    <!-- Desktop Nav Links -->
+    <ul class="nav__links" role="list">
+      {% for item in site.nav %}
+      <li>
+        <a href="{{ item.url | relative_url }}"
+           {% if page.url == item.url %}class="active" aria-current="page"{% endif %}>
+          {{ item.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <!-- Right side: ArtStation + Hamburger -->
+    <div class="nav__right">
+      <a href="{{ site.author.artstation }}"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="nav__artstation"
+         aria-label="View ArtStation portfolio (opens in new tab)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M0 17.723l2.027 3.505h.001a2.424 2.424 0 0 0 2.164 1.333h13.457l-2.792-4.838H0zm24 .025c0-.484-.143-.935-.388-1.314L15.728 2.728a2.424 2.424 0 0 0-2.164-1.333H9.419L21.598 22.54l1.92-3.325c.378-.637.482-.919.482-1.467zm-11.129-3.462L7.428 4.858l-5.444 9.428h10.887z"/>
+        </svg>
+        ArtStation ↗
+      </a>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </nav>
+</header>

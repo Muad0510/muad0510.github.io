@@ -1,0 +1,109 @@
+---
+layout: default
+title: About
+description: "About {{ site.author.name }} — the person behind the pixels."
+---
+
+<section class="about-hero">
+  <div class="container">
+    <div class="about-hero__grid">
+
+      <div class="about-hero__text">
+        <p class="eyebrow">About Me</p>
+        <h1>{{ site.author.name }}</h1>
+        <span class="role">{{ site.author.title }}</span>
+
+        <p class="lead">
+          I'm a 3D artist who genuinely believes that the best art is invisible — 
+          when the craft disappears and only the feeling remains.
+        </p>
+        <p>
+          Growing up I was equally obsessed with video games and the natural world. 
+          That tension — between the synthetic and the organic — still drives most of 
+          my work today. I'm drawn to the moments where something digital starts to 
+          feel real.
+        </p>
+        <p>
+          I've been doing this professionally for over 8 years, across games, film, 
+          and interactive experiences. I've led art teams, built pipelines from scratch, 
+          shipped titles to millions of players, and spent more hours in Blender than 
+          I care to admit.
+        </p>
+        <p>
+          Outside of work, I spend time hiking, collecting 35mm film cameras that 
+          I never actually use, and contributing to open-source Blender add-ons. 
+          I'm based in Amsterdam, originally from somewhere with worse weather.
+        </p>
+        <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
+          <a href="{{ '/resume' | relative_url }}" class="btn btn--primary">View Resume</a>
+          <a href="{{ '/contact' | relative_url }}" class="btn btn--ghost">Get in touch →</a>
+        </div>
+      </div>
+
+      <div class="about-photo">
+        <!-- Replace this with an <img> tag pointing to your photo -->
+        <div class="about-photo__placeholder">
+          <span>Your photo here</span>
+        </div>
+        <p class="about-photo__note">
+          Replace with: &lt;img src="/assets/img/photo.jpg" alt="{{ site.author.name }}"&gt;
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── VALUES ──────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div style="margin-bottom:2.5rem;">
+      <p class="eyebrow">How I Work</p>
+      <h2 style="font-size:clamp(1.75rem,3.5vw,2.5rem); color:var(--white); margin-top:0.5rem;">
+        A few things I believe deeply
+      </h2>
+    </div>
+
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-card__icon">🔬</div>
+        <h3 class="value-card__title">Technical before aesthetic</h3>
+        <p class="value-card__desc">
+          Beautiful work that breaks the engine isn't beautiful, it's expensive. 
+          I care about poly count, UV efficiency, and LODs — not as constraints, 
+          but as part of the craft.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-card__icon">👁</div>
+        <h3 class="value-card__title">Storytelling through environment</h3>
+        <p class="value-card__desc">
+          Every prop has a history. Every surface has been touched by someone. 
+          I think about the fictional people who live in the spaces I build, 
+          even if the player never consciously notices.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-card__icon">⚡</div>
+        <h3 class="value-card__title">Feedback is information</h3>
+        <p class="value-card__desc">
+          Criticism early is cheap. Criticism in the final week of crunch is 
+          catastrophic. I ask for feedback obsessively and early, and I give 
+          it the same way — specific, actionable, without ego.
+        </p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-card__icon">🌿</div>
+        <h3 class="value-card__title">Reference everything</h3>
+        <p class="value-card__desc">
+          The fastest way to make something look fake is to rely on memory. 
+          My reference folders are embarrassingly large. I take my own 
+          reference photos. I study how light actually behaves.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

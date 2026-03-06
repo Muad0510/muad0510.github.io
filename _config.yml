@@ -1,0 +1,51 @@
+title: "Mate Meszaros"
+description: "3D Generalist, Freelancer"
+baseurl: "" # Leave empty if using username.github.io, or set to "/repo-name"
+url: "https://muad0510.github.io"
+
+# ─── Author Info ──────────────────────────────────────
+author:
+  name: "Mate Meszaros"
+  first: "Mate"
+  last: "Meszaros"
+  initials: "MM"
+  title: "3D Generalist, Freelancer"
+  tagline: "I build worlds that don't exist. Yet..."
+  email: "hello@meszi.me"
+  location: "Wherever I'm needed"
+  availability: true           # shows green availability badge on contact page
+  availability_text: "Open to freelance & full-time"
+  linkedin: "https://linkedin.com/in/meszarosmate0510"
+  artstation: "https://www.artstation.com/msquared3d"
+  github: "https://github.com/muad0510"
+
+# ─── Navigation ───────────────────────────────────────
+nav:
+  - title: Home
+    url: /
+  - title: Resume
+    url: /resume
+  - title: Work
+    url: /work
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+
+# ─── Build Settings ───────────────────────────────────
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+sass:
+  style: compressed
+
+markdown: kramdown
+permalink: /:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor

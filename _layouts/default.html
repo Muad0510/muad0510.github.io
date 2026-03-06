@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <title>{% if page.title and page.title != "Home" %}{{ page.title }} — {{ site.author.name }}{% else %}{{ site.author.name }} — {{ site.author.title }}{% endif %}</title>
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fraunces (editorial serif) + Syne (geometric sans) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+  {% seo %}
+</head>
+<body>
+  {% include header.html %}
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <ul>
+      {% for item in site.nav %}
+      <li>
+        <a href="{{ item.url | relative_url }}" {% if page.url == item.url %}class="active"{% endif %}>
+          {{ item.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="mobile-menu__artstation">
+      <a href="{{ site.author.artstation }}" target="_blank" rel="noopener" class="btn btn--outline-accent">
+        ↗ ArtStation
+      </a>
+    </div>
+  </div>
+
+  <main class="page-content">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>
