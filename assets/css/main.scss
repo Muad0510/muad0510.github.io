@@ -228,6 +228,29 @@ h1, h2, h3, h4 {
   transform: translateY(-1px);
 }
 
+.nav__linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1.1rem;
+  background: var(--surface-2);
+  border: 1px solid var(--border-l);
+  border-radius: 2px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text);
+  transition: all 0.25s var(--ease);
+}
+.nav__linkedin svg { flex-shrink: 0; }
+.nav__linkedin:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--white);
+  transform: translateY(-1px);
+}
+
 /* Hamburger */
 .nav__hamburger {
   display: none;
