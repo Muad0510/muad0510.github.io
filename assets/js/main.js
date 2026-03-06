@@ -42,14 +42,6 @@ if (header) {
   }, { passive: true });
 }
 
-// ─── PDF / Print Resume ──────────────────────────────────────
-const printBtn = document.getElementById('printResume');
-if (printBtn) {
-  printBtn.addEventListener('click', () => {
-    window.print();
-  });
-}
-
 // ─── Reset all animated elements before printing ─────────────
 // This ensures no element is left with opacity:0 from the scroll observer
 function resetForPrint() {
@@ -100,4 +92,3 @@ document.querySelectorAll('.nav__links a').forEach(link => {
     link.classList.add('active');
   }
 });
-
