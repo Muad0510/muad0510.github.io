@@ -924,10 +924,43 @@ h1, h2, h3, h4 {
 .lang-row__lang { color: var(--text); font-weight: 500; }
 .lang-row__lvl { color: var(--text-muted); }
 
+/* References */
+.ref-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+.ref-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 1.1rem;
+}
+.ref-item__name {
+  font-weight: 700;
+  color: var(--white);
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+.ref-item__company {
+  font-size: 0.78rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+.ref-item__email {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  transition: color 0.2s;
+  word-break: break-all;
+}
+.ref-item__email:hover { color: var(--accent); }
+
 @media (max-width: 900px) {
   .resume-head { grid-template-columns: 1fr; }
   .resume-head__contact { text-align: left; }
   .resume-layout { grid-template-columns: 1fr; }
+  .ref-grid { grid-template-columns: 1fr; }
 }
 
 /* ============================================================

@@ -1,23 +1,23 @@
-title: "Mate Meszaros"
-description: "3D Generalist, Freelancer"
+title: "Máté Mészáros"
+description: "Freelance Designer & Operations Professional — 2D/3D design, IT, and people."
 baseurl: "" # Leave empty if using username.github.io, or set to "/repo-name"
-url: "https://muad0510.github.io"
+url: "https://yourusername.github.io"
 
 # ─── Author Info ──────────────────────────────────────
 author:
-  name: "Mate Meszaros"
-  first: "Mate"
-  last: "Meszaros"
+  name: "Máté Mészáros"
+  first: "Máté"
+  last: "Mészáros"
   initials: "MM"
-  title: "3D Generalist, Freelancer"
-  tagline: "I build worlds that don't exist. Yet..."
-  email: "hello@meszi.me"
-  location: "Wherever I'm needed"
+  title: "Designer & Operations Professional"
+  tagline: "I solve problems — visually or otherwise."
+  email: "meszarosmate0510@gmail.com"
+  location: "Netherlands / Hungary"
   availability: true           # shows green availability badge on contact page
-  availability_text: "Open to freelance & full-time"
-  linkedin: "https://linkedin.com/in/meszarosmate0510"
-  artstation: "https://www.artstation.com/msquared3d"
-  github: "https://github.com/muad0510"
+  availability_text: "Open to freelance design work"
+  linkedin: "https://linkedin.com/in/yourprofile"   # ← update this
+  artstation: "https://www.artstation.com/yourprofile"  # ← update this
+  github: ""  # leave blank if not applicable
 
 # ─── Navigation ───────────────────────────────────────
 nav:

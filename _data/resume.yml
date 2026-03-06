@@ -1,95 +1,104 @@
-# ─── Resume Data ─────────────────────────────────────────────────────────────
+# ─── Resume Data — Máté Mészáros ─────────────────────────────────────────────
 # Edit this file to update all resume/CV content site-wide.
-# The resume page and PDF output are both generated from this data.
 
 summary: >
-  Senior 3D Artist and Art Director with 8+ years of experience crafting 
-  high-fidelity environments and characters for AAA games, film, and 
-  interactive media. Passionate about bridging technical rigor with artistic 
-  vision, leading teams from concept through final render.
+  Multifaceted individual with 10+ years of diverse experience spanning IT support,
+  design, and operational management. Adaptable, great multitasker and problem-solver
+  with a proven ability to lead projects and teams towards successful outcomes —
+  cultivating communication and teamwork that enhance overall performance. Committed
+  to optimising processes and providing exceptional support in any field.
 
 experience:
-  - company: "Studio Luminary"
-    role: "Lead 3D Artist"
-    period: "2021 – Present"
-    location: "Amsterdam, NL"
+  - company: "WizzAir"
+    role: "Crew Controller"
+    period: "Sep 2024 – Present"
+    location: "Budapest, Hungary"
     highlights:
-      - "Led a 6-person art team through full production cycle of two shipped titles, delivering all 3D assets on time and within polygon budgets."
-      - "Architected a PBR material library reducing per-asset setup time by 40% across the studio."
-      - "Collaborated with technical directors to implement procedural environment systems in Houdini, replacing manual terrain workflows."
-      - "Mentored 3 junior artists, all of whom were promoted within 18 months."
+      - "Continuous tracking, monitoring and modification of the flight deck and cabin crew rosters during day-to-day operations."
+      - "Monitoring crews' on-time check-in for flights and other duties, checking duty and flight time limitations while providing adequate crew coverage in case of any shortage on the day of operation."
 
-  - company: "Meridian Games"
-    role: "Senior Environment Artist"
-    period: "2018 – 2021"
-    location: "Berlin, DE"
+  - company: "WizzAir"
+    role: "Airport Operations Controller"
+    period: "Feb 2023 – Sep 2024"
+    location: "Budapest, Hungary"
     highlights:
-      - "Created hero environments for a shipped open-world RPG (3M+ copies sold), responsible for biome consistency and visual storytelling."
-      - "Developed modular asset kits that reduced environment build time by 30%."
-      - "Worked directly with art director to establish the game's visual language and style guide."
-      - "Shipped 2 DLC expansions as sole environment artist under tight 3-month timelines."
+      - "Monitored and managed flight disruptions in day-to-day operations by coordinating with external partners and providers."
+      - "Ensured on-time delivery of passenger transport and accommodation in critical and irregular operations situations."
 
-  - company: "Pixel Foundry"
-    role: "3D Artist"
-    period: "2016 – 2018"
-    location: "Utrecht, NL"
+  - company: "Self-employed"
+    role: "Freelance Designer"
+    period: "Jun 2018 – Present"
+    location: "Remote"
     highlights:
-      - "Produced high-poly and game-ready assets for 4 shipped mobile and PC titles."
-      - "Created character models from concept sheets through final LODs, bakes, and textures."
-      - "Established naming conventions and folder structures adopted across all future projects."
+      - "Developed and created engaging artworks both under a personal brand and for client commissions."
+      - "Evaluated projects, requirements and scope; executed designs and plans as a one-person team, producing high-quality 2D and 3D designs."
+
+  - company: "CasinoWin Kft."
+    role: "IT Administrator / Generalist Designer"
+    period: "Sep 2016 – May 2018"
+    location: "Győr, Hungary"
+    highlights:
+      - "Ensured a smooth, hassle-free work environment and assisted in the undisturbed functioning of internal IT systems."
+      - "Communicated daily with multiple departments, managing their technical needs and requirements to better serve guests."
+      - "Maintained contact with external partners, keeping systems and solutions up to date while ensuring stable, uninterrupted uptime."
 
 education:
-  - institution: "Amsterdam University of the Arts"
-    degree: "Bachelor of Fine Arts — Digital Media & Animation"
-    period: "2012 – 2016"
-    note: "Graduated with Honours. Thesis: Procedural World-Building in Real-Time Engines."
+  - institution: "Budapest Metropolitan University"
+    degree: "BSc Media Design"
+    period: "Sep 2018 – Jul 2021"
+    note: ""
 
-  - institution: "GNOMON Workshop"
-    degree: "Advanced Environment Art Certificate"
-    period: "2017"
-    note: "Online program. Focus on photorealistic environment creation for games."
+  - institution: "Mesharray Informatikai Zrt."
+    degree: "3D Massive — Modelling, Animation & Game Integration"
+    period: "Sep 2016 – Apr 2017"
+    note: "Professional certification. 3D modelling, animation pipelines, and game engine integration."
 
 skills:
   primary:
-    - name: "Blender"
+    - name: "Problem Solving"
       level: "Expert"
-    - name: "ZBrush"
+    - name: "Communication"
       level: "Expert"
-    - name: "Unreal Engine 5"
-      level: "Expert"
-    - name: "Substance 3D Painter"
-      level: "Expert"
-    - name: "Houdini"
+    - name: "Adaptability"
       level: "Advanced"
-    - name: "Maya"
+    - name: "Multitasking"
       level: "Advanced"
-    - name: "Marvelous Designer"
+    - name: "Presentation"
+      level: "Advanced"
+    - name: "Critical Thinking"
+      level: "Advanced"
+    - name: "2D & 3D Design"
+      level: "Advanced"
+    - name: "IT Administration"
+      level: "Advanced"
+    - name: "Operations Management"
+      level: "Advanced"
+    - name: "Project Leadership"
       level: "Proficient"
-    - name: "Photoshop"
-      level: "Expert"
-    - name: "Marmoset Toolbag"
-      level: "Advanced"
-    - name: "Rizom UV"
-      level: "Advanced"
 
   soft:
-    - "Art Direction"
     - "Team Leadership"
-    - "Visual Storytelling"
-    - "Pipeline Development"
+    - "Process Optimisation"
+    - "Cross-dept Liaison"
+    - "Crisis Management"
     - "Client Communication"
-    - "Code Review"
+    - "Independent Delivery"
 
-certifications:
-  - name: "Epic Games — Unreal Engine Authorized Instructor"
-    year: "2023"
-  - name: "Adobe Substance 3D Certified Professional"
-    year: "2022"
+certifications: []
 
 languages:
-  - language: "English"
+  - language: "Hungarian"
     level: "Native"
-  - language: "Dutch"
-    level: "Conversational"
-  - language: "German"
-    level: "Basic"
+  - language: "English"
+    level: "Fluent"
+
+references:
+  - name: "Zsolt Szántó"
+    company: "Casino Win Győr"
+    email: "zsolt.szanto@casinowin.hu"
+  - name: "Balázs Veres"
+    company: "WizzAir"
+    email: "balazs.veres@wizzair.com"
+  - name: "Dávid Földeák"
+    company: "WizzAir"
+    email: "david.foldeak@wizzair.com"

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Resume
-description: "CV and resume for {{ site.author.name }}, {{ site.author.title }}"
+description: "CV and resume for Máté Mészáros — Designer & Operations Professional"
 ---
 
 {% assign r = site.data.resume %}
@@ -30,11 +30,10 @@ description: "CV and resume for {{ site.author.name }}, {{ site.author.title }}"
     </div>
     <div class="resume-head__contact">
       <a href="mailto:{{ a.email }}">{{ a.email }}</a>
-      <a href="{{ a.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+      <span>+36 20 3216 334</span>
+      <span>+31 (0)6 1379 1323</span>
       <a href="{{ a.artstation }}" target="_blank" rel="noopener">ArtStation</a>
-      {% if a.github %}
-      <a href="{{ a.github }}" target="_blank" rel="noopener">GitHub</a>
-      {% endif %}
+      <a href="{{ a.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
       <span>{{ a.location }}</span>
     </div>
   </header>
@@ -72,6 +71,22 @@ description: "CV and resume for {{ site.author.name }}, {{ site.author.title }}"
         {% endfor %}
       </section>
 
+      <!-- References -->
+      {% if r.references %}
+      <section class="rs">
+        <h2 class="rs__label">References</h2>
+        <div class="ref-grid">
+          {% for ref in r.references %}
+          <div class="ref-item">
+            <p class="ref-item__name">{{ ref.name }}</p>
+            <p class="ref-item__company">{{ ref.company }}</p>
+            <a href="mailto:{{ ref.email }}" class="ref-item__email">{{ ref.email }}</a>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
     </main>
 
     <!-- Sidebar -->
@@ -88,7 +103,7 @@ description: "CV and resume for {{ site.author.name }}, {{ site.author.title }}"
         {% endfor %}
       </section>
 
-      <!-- Soft Skills -->
+      <!-- Strengths -->
       <section class="rs">
         <h2 class="rs__label">Strengths</h2>
         <div class="soft-tags">
@@ -106,25 +121,12 @@ description: "CV and resume for {{ site.author.name }}, {{ site.author.title }}"
           <p class="edu-item__deg">{{ edu.degree }}</p>
           <p class="edu-item__school">{{ edu.institution }}</p>
           <p class="edu-item__period">{{ edu.period }}</p>
-          {% if edu.note %}
+          {% if edu.note and edu.note != "" %}
           <p class="edu-item__note">{{ edu.note }}</p>
           {% endif %}
         </div>
         {% endfor %}
       </section>
-
-      <!-- Certifications -->
-      {% if r.certifications %}
-      <section class="rs">
-        <h2 class="rs__label">Certifications</h2>
-        {% for cert in r.certifications %}
-        <div class="cert-item">
-          <strong>{{ cert.name }}</strong>
-          {{ cert.year }}
-        </div>
-        {% endfor %}
-      </section>
-      {% endif %}
 
       <!-- Languages -->
       {% if r.languages %}
