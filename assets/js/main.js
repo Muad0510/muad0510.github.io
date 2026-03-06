@@ -12,7 +12,6 @@ if (hamburger && mobileMenu) {
     body.style.overflow = isOpen ? 'hidden' : '';
   });
 
-  // Close on nav link click
   mobileMenu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       hamburger.classList.remove('is-open');
@@ -23,7 +22,6 @@ if (hamburger && mobileMenu) {
     });
   });
 
-  // Close on Escape key
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && mobileMenu.classList.contains('is-open')) {
       hamburger.classList.remove('is-open');
@@ -52,7 +50,21 @@ if (printBtn) {
   });
 }
 
-// ─── Scroll-triggered fade-in for elements ───────────────────
+// ─── Reset all animated elements before printing ─────────────
+// This ensures no element is left with opacity:0 from the scroll observer
+function resetForPrint() {
+  document.querySelectorAll(
+    '.preview-card, .project-card, .value-card, .exp-item, .stat, .social-row'
+  ).forEach(el => {
+    el.style.opacity = '1';
+    el.style.transform = 'none';
+  });
+}
+window.addEventListener('beforeprint', resetForPrint);
+
+// ─── Scroll-triggered fade-in ────────────────────────────────
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 const observerOptions = {
   threshold: 0.12,
   rootMargin: '0px 0px -40px 0px'
@@ -68,21 +80,19 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-// Apply to cards and sections (not hero — that has its own CSS animation)
-document.querySelectorAll(
-  '.preview-card, .project-card, .value-card, .exp-item, .stat, .social-row'
-).forEach(el => {
-  // Only animate if user doesn't prefer reduced motion
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+// Only apply scroll animations when not in print context and motion is OK
+if (!prefersReducedMotion) {
+  document.querySelectorAll(
+    '.preview-card, .project-card, .value-card, .exp-item, .stat, .social-row'
+  ).forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(16px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
-  }
-});
+  });
+}
 
-// ─── Active nav link ─────────────────────────────────────────
-// (Jekyll handles this via Liquid in the HTML, this is a fallback)
+// ─── Active nav link fallback ────────────────────────────────
 const currentPath = window.location.pathname;
 document.querySelectorAll('.nav__links a').forEach(link => {
   if (link.getAttribute('href') === currentPath ||
@@ -90,3 +100,4 @@ document.querySelectorAll('.nav__links a').forEach(link => {
     link.classList.add('active');
   }
 });
+
