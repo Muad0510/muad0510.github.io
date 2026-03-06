@@ -1,7 +1,7 @@
 title: "Máté Mészáros"
 description: "Freelance Designer & Operations Professional — 2D/3D design, IT, and people."
 baseurl: "" # Leave empty if using username.github.io, or set to "/repo-name"
-url: "https://yourusername.github.io"
+url: "https://muad0510.github.io"
 
 # ─── Author Info ──────────────────────────────────────
 author:
@@ -11,12 +11,12 @@ author:
   initials: "MM"
   title: "Designer & Operations Professional"
   tagline: "I solve problems — visually or otherwise."
-  email: "meszarosmate0510@gmail.com"
+  email: "hello@meszi.me"
   location: "Netherlands / Hungary"
   availability: true           # shows green availability badge on contact page
   availability_text: "Open to freelance design work"
-  linkedin: "https://linkedin.com/in/yourprofile"   # ← update this
-  artstation: "https://www.artstation.com/yourprofile"  # ← update this
+  linkedin: "https://linkedin.com/in/meszarosmate0510"
+  artstation: "https://www.artstation.com/msquared3d"
   github: ""  # leave blank if not applicable
 
 # ─── Navigation ───────────────────────────────────────

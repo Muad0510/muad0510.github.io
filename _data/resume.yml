@@ -11,7 +11,7 @@ summary: >
 experience:
   - company: "WizzAir"
     role: "Crew Controller"
-    period: "Sep 2024 – Present"
+    period: "Sep 2024 - Present"
     location: "Budapest, Hungary"
     highlights:
       - "Continuous tracking, monitoring and modification of the flight deck and cabin crew rosters during day-to-day operations."
@@ -19,7 +19,7 @@ experience:
 
   - company: "WizzAir"
     role: "Airport Operations Controller"
-    period: "Feb 2023 – Sep 2024"
+    period: "Feb 2023 - Sep 2024"
     location: "Budapest, Hungary"
     highlights:
       - "Monitored and managed flight disruptions in day-to-day operations by coordinating with external partners and providers."
@@ -27,7 +27,7 @@ experience:
 
   - company: "Self-employed"
     role: "Freelance Designer"
-    period: "Jun 2018 – Present"
+    period: "Jun 2018 - Present"
     location: "Remote"
     highlights:
       - "Developed and created engaging artworks both under a personal brand and for client commissions."
@@ -35,7 +35,7 @@ experience:
 
   - company: "CasinoWin Kft."
     role: "IT Administrator / Generalist Designer"
-    period: "Sep 2016 – May 2018"
+    period: "Sep 2016 - May 2018"
     location: "Győr, Hungary"
     highlights:
       - "Ensured a smooth, hassle-free work environment and assisted in the undisturbed functioning of internal IT systems."
@@ -45,12 +45,12 @@ experience:
 education:
   - institution: "Budapest Metropolitan University"
     degree: "BSc Media Design"
-    period: "Sep 2018 – Jul 2021"
+    period: "Sep 2018 - Jul 2021"
     note: ""
 
   - institution: "Mesharray Informatikai Zrt."
     degree: "3D Massive — Modelling, Animation & Game Integration"
-    period: "Sep 2016 – Apr 2017"
+    period: "Sep 2016 - Apr 2017"
     note: "Professional certification. 3D modelling, animation pipelines, and game engine integration."
 
 skills:
@@ -91,6 +91,10 @@ languages:
     level: "Native"
   - language: "English"
     level: "Fluent"
+  - language: "Japanese"
+    level: "Learning"
+  - language: "Dutch"
+    level: "Learning"
 
 references:
   - name: "Zsolt Szántó"
@@ -99,6 +103,9 @@ references:
   - name: "Balázs Veres"
     company: "WizzAir"
     email: "balazs.veres@wizzair.com"
-  - name: "Dávid Földeák"
-    company: "WizzAir"
-    email: "david.foldeak@wizzair.com"
+  - name: "Gábor Mészáros"
+    company: "Goodwill-PR"
+    email: "mg@goodwill-pr.hu"
+  - mame: "Csaba Istvan Berta"
+    company: "Freelance"
+    email: "cs@incom.hu"
