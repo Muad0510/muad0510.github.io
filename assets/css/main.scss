@@ -1531,9 +1531,12 @@ h1, h2, h3, h4 {
   .rs {
     display: block !important;
     margin-bottom: 10pt !important;
-    page-break-inside: auto !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
   .rs__label {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
     font-family: Arial, sans-serif !important;
     font-size: 7.5pt !important;
     font-weight: 700 !important;
@@ -1625,6 +1628,8 @@ h1, h2, h3, h4 {
     margin-top: 4pt !important;
     width: 100% !important;
     page-break-before: auto !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
 
   /* Skills */
